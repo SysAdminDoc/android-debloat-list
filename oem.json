@@ -20471,5 +20471,402 @@
         "id": "zte.com.cn.filer",
         "description": "File Manager\nStock File Manager",
         "removal": "replace"
+    },
+    {
+        "id": "com.monotype.android.font.roboto",
+        "label": "Monotype Roboto Font",
+        "description": "Monotype-packaged Roboto font asset bundle used by Samsung's Settings > Display > Font style picker.",
+        "removal": "delete",
+        "warning": "Removing makes the Roboto entry disappear from the Samsung font-style picker. The system Roboto font shipped by AOSP remains."
+    },
+    {
+        "id": "com.mygalaxy.service",
+        "label": "MyGalaxy Service",
+        "description": "Background service of the MyGalaxy app preinstalled on Samsung devices in India. Provides Samsung-recommended app installs, offers, deals, and other content. Heavy promotional / advertising payload.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.mygalaxy"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.qualcomm.qti.gpudrivers.sun.api35",
+        "label": "Qualcomm GPU Drivers (Snapdragon 8 Elite for Galaxy)",
+        "description": "Updatable Adreno GPU driver package for the Snapdragon 8 Elite for Galaxy SoC (codename 'sun', API 35 / Android 15 baseline). Loaded by GraphicsEnvironment for supported games. Vendor counterpart of com.samsung.gamedriver.sm8750.",
+        "web": [
+            "https://source.android.com/docs/core/graphics/updatable-drivers"
+        ],
+        "removal": "unsafe",
+        "warning": "Removing can break OpenGL ES / Vulkan rendering on apps that opted in to the updatable driver."
+    },
+    {
+        "id": "com.samsung.accessory.budsunitemgr",
+        "label": "Galaxy Buds Manager",
+        "description": "Samsung Galaxy Buds united plugin used by the Galaxy Wearable / Buds Manager flow. Handles pairing, firmware updates, Auracast, and configuration of Galaxy Buds family earbuds.",
+        "removal": "delete",
+        "warning": "Disable / remove only if you don't own Galaxy Buds. Removing breaks pairing and firmware update for Galaxy Buds."
+    },
+    {
+        "id": "com.samsung.android.app.esimkeystring",
+        "label": "Samsung eSIM KeyString",
+        "description": "Carrier eSIM provisioning key strings used by Samsung's eSIM activation flow.",
+        "removal": "caution",
+        "warning": "Required for eSIM activation and provisioning on some carriers. Removing can prevent eSIM download or transfer."
+    },
+    {
+        "id": "com.samsung.android.app.moments",
+        "label": "Samsung Moments",
+        "description": "Samsung Gallery 'Moments' / Stories engine that auto-curates highlight reels and AI-generated movie clips from your photos. Background indexer can be heavy on storage and battery.",
+        "removal": "replace",
+        "suggestions": "gallery"
+    },
+    {
+        "id": "com.samsung.android.app.readingglass",
+        "label": "Samsung Reading Glass",
+        "description": "Magnifier accessibility utility that lets the camera be used as a magnifying glass, often surfaced through the Accessibility menu and Edge Panel.",
+        "removal": "delete",
+        "warning": "Removing disables the Reading Glass accessibility shortcut. Users who rely on screen magnification should keep this."
+    },
+    {
+        "id": "com.samsung.android.app.sketchbook",
+        "label": "Samsung Sketchbook",
+        "description": "Samsung's preinstalled drawing / sketching app for the S Pen. Replaceable with PENUP, Krita, or any general drawing app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.android.app.vex.scanner",
+        "label": "Samsung VEX Scanner",
+        "description": "Visual eXtension (VEX) scanner that powers Galaxy AI 'Circle to Search'-style image lookup, document scanning, and AI image recognition flows on One UI 7+.",
+        "removal": "caution",
+        "warning": "Removing disables Galaxy AI visual search, document detection in Camera, and S Pen smart selection scanning."
+    },
+    {
+        "id": "com.samsung.android.ese",
+        "label": "Samsung embedded Secure Element (eSE)",
+        "description": "Driver / service for the embedded Secure Element used by NFC payments, eSIM, and hardware-backed credentials (Samsung Wallet, Google Pay).",
+        "removal": "unsafe",
+        "warning": "Removing breaks NFC tap-to-pay, Samsung Wallet, eSIM provisioning, and any feature that relies on the embedded SE for keys."
+    },
+    {
+        "id": "com.samsung.android.hwresourceshare",
+        "label": "Samsung Hardware Resource Share",
+        "description": "Backbone of Samsung Quick Share / nearby device transfer that brokers Wi-Fi Direct and Bluetooth resource handoff between Samsung apps.",
+        "removal": "caution",
+        "warning": "Required for Samsung Quick Share, Music Share, and nearby file/screen sharing. Removing breaks those flows."
+    },
+    {
+        "id": "com.samsung.android.hwresourceshare.storage",
+        "label": "Samsung Hardware Resource Share Storage",
+        "description": "Storage backend / shared content provider used by Hardware Resource Share for cached transfer payloads.",
+        "removal": "caution",
+        "warning": "Removing alongside or independently of com.samsung.android.hwresourceshare breaks Quick Share."
+    },
+    {
+        "id": "com.samsung.android.intellivoiceservice",
+        "label": "Samsung IntelliVoice Service",
+        "description": "On-device wake-word and voice-trigger stack that powers 'Hi Bixby', voice unlock, and call/voice command features.",
+        "removal": "delete",
+        "warning": "Removing disables Bixby wake-word and any 'always-listening' voice triggers. Standard voice features through Google Assistant continue to work."
+    },
+    {
+        "id": "com.samsung.android.internal.overlay.config.default_contextual_search",
+        "label": "Samsung Default Contextual Search Overlay",
+        "description": "Runtime Resource Overlay (RRO) that wires the system's contextual search feature (Now Bar / Now Brief / Circle to Search) to a default provider.",
+        "removal": "caution",
+        "warning": "Removing this overlay can break Galaxy AI Circle-to-Search and Now Brief integration."
+    },
+    {
+        "id": "com.samsung.android.knox.er",
+        "label": "Samsung Knox Enterprise Recovery",
+        "description": "Knox component that supports Knox Enterprise Recovery / device-recovery flows for managed Samsung devices.",
+        "removal": "caution",
+        "warning": "Required on enterprise / MDM-enrolled devices. Personal-use devices generally don't need Knox features but disabling Knox subcomponents on a Samsung phone can have unpredictable effects on Secure Folder, Samsung Pass, and Wallet."
+    },
+    {
+        "id": "com.samsung.android.knox.kfbp",
+        "label": "Samsung Knox KFBP",
+        "description": "Knox Factory Bypass Protection (KFBP) component. Part of the Knox theft-protection stack tied to Samsung accounts and Find My Mobile.",
+        "removal": "unsafe",
+        "warning": "Removing can break Factory Reset Protection, Find My Mobile lock, and Samsung-account-bound theft protection."
+    },
+    {
+        "id": "com.samsung.android.knox.knnr",
+        "label": "Samsung Knox KNNR",
+        "description": "Knox Network Neutral Roaming (KNNR) component used for carrier-neutral roaming under Samsung's Knox stack.",
+        "removal": "caution",
+        "warning": "Carrier roaming features may misbehave if removed."
+    },
+    {
+        "id": "com.samsung.android.knox.sandbox",
+        "label": "Samsung Knox Sandbox",
+        "description": "Knox sandbox / container runtime used for Secure Folder, Knox Workspace, and Samsung DeX session isolation.",
+        "removal": "unsafe",
+        "warning": "Removing breaks Secure Folder, work profile isolation, and Knox-managed containers."
+    },
+    {
+        "id": "com.samsung.android.liveeffectservice",
+        "label": "Samsung Live Effect Service",
+        "description": "Powers Samsung Camera's Live Effects (background blur, AR stickers, beauty filters) during preview and recording.",
+        "removal": "delete",
+        "warning": "Removing disables Live Effects in Samsung Camera but does not affect basic photo / video capture."
+    },
+    {
+        "id": "com.samsung.android.mhs.ai",
+        "label": "Samsung Multi-Hop Service AI",
+        "description": "On-device AI Multi-Hop Service that feeds Galaxy AI features (Note Assist, Browsing Assist, Live Translate) by chaining model invocations across capability providers.",
+        "removal": "delete",
+        "warning": "Removing disables on-device Galaxy AI assistance features. Cloud-backed AI features may still work via Samsung servers."
+    },
+    {
+        "id": "com.samsung.android.motionphoto.app",
+        "label": "Samsung Motion Photo",
+        "description": "Standalone Motion Photo viewer / extractor. Plays the short MP4 clip embedded in JPEGs captured with Motion Photo enabled.",
+        "removal": "delete",
+        "warning": "Removing prevents tapping a still photo to play its motion clip; Motion Photo capture itself remains available in Samsung Camera."
+    },
+    {
+        "id": "com.samsung.android.mydevice",
+        "label": "Samsung My Device",
+        "description": "Samsung diagnostic / device-info app that surfaces hardware test menus, device specs, and remote support hooks.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.nfc",
+        "label": "Samsung NFC Service",
+        "description": "Samsung's NFC service that brokers card emulation, peer-to-peer sharing, and reader/writer modes on Samsung devices.",
+        "removal": "unsafe",
+        "warning": "Required for tap-to-pay (Samsung Wallet, Google Wallet), NFC tag reading, and card emulation. Removing disables all NFC functionality."
+    },
+    {
+        "id": "com.samsung.android.nfc.resources.default",
+        "label": "Samsung NFC Default Resources",
+        "description": "Resource overlay providing default configuration tables for the Samsung NFC service.",
+        "removal": "unsafe",
+        "warning": "Removing can prevent Samsung NFC from initializing correctly."
+    },
+    {
+        "id": "com.samsung.android.offline.languagemodel",
+        "label": "Samsung Offline Language Model",
+        "description": "On-device language model assets used by Galaxy AI's Live Translate, Interpreter, Note Assist summarisation, and Browsing Assist when run offline.",
+        "removal": "delete",
+        "warning": "Removing forces Galaxy AI translation / summarisation through the cloud or disables them in airplane mode."
+    },
+    {
+        "id": "com.samsung.android.privateaccesstokens",
+        "label": "Samsung Private Access Tokens",
+        "description": "Implements RFC 9578 Privacy Pass / Private Access Tokens so apps can prove they aren't bots without exposing identity. Privacy-positive component.",
+        "web": [
+            "https://datatracker.ietf.org/doc/rfc9578/"
+        ],
+        "removal": "caution",
+        "warning": "Removing can force apps and websites to fall back to traditional CAPTCHAs, which leak more identifying signals."
+    },
+    {
+        "id": "com.samsung.android.qmdservice",
+        "label": "Samsung QMD Service",
+        "description": "Quality Management & Diagnostics service that collects telemetry and runs background diagnostic probes for Samsung Members.",
+        "removal": "delete",
+        "warning": "Removing reduces Samsung-side telemetry; some Samsung Members hardware tests may not return results."
+    },
+    {
+        "id": "com.samsung.android.sead",
+        "label": "Samsung SEAD",
+        "description": "Samsung Enhanced AI Daemon (SEAD) — orchestrates on-device AI workload scheduling on Samsung devices with NPU/Hexagon acceleration.",
+        "removal": "delete",
+        "warning": "Removing degrades performance of on-device Galaxy AI features (Note Assist, Photo Assist, Generative Edit)."
+    },
+    {
+        "id": "com.samsung.android.service.aircommand",
+        "label": "Samsung Air Command",
+        "description": "S Pen Air Command radial menu service. Surfaces shortcuts (Note, Smart Select, Translate) when the S Pen is detached or button-pressed.",
+        "removal": "delete",
+        "warning": "Removing disables the S Pen Air Command radial menu. Other S Pen features (handwriting, button shortcuts) continue to work."
+    },
+    {
+        "id": "com.samsung.android.service.airviewdictionary",
+        "label": "Samsung Air View Dictionary",
+        "description": "Provides hover-over translation / dictionary lookup when the S Pen hovers over text.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.settingshelper",
+        "label": "Samsung Settings Helper",
+        "description": "Internal helper bound by Samsung's Settings UI for migrations and capability detection.",
+        "removal": "caution",
+        "warning": "Some Settings panels (Connections, Battery) may misbehave if removed."
+    },
+    {
+        "id": "com.samsung.android.simagent",
+        "label": "Samsung SIM Agent",
+        "description": "SIM toolkit agent that brokers SIM Application Toolkit (STK) menus and carrier-issued SIM commands.",
+        "removal": "caution",
+        "warning": "Removing can break carrier SIM menus and prepaid balance / data top-up flows that ship as SIM applets."
+    },
+    {
+        "id": "com.samsung.android.ssco",
+        "label": "Samsung SmartSwitch Companion",
+        "description": "Companion service for Samsung Smart Switch that handles handoff to / from another device during Smart Switch transfers.",
+        "removal": "delete",
+        "warning": "Removing breaks Smart Switch transfer to a new device."
+    },
+    {
+        "id": "com.samsung.android.uwb.resources",
+        "label": "Samsung UWB Resources",
+        "description": "Configuration resources for Samsung's Ultra-Wideband (UWB) stack used for SmartTag tracking, digital car keys, and precision device handoff.",
+        "removal": "caution",
+        "warning": "Removing can break Galaxy SmartTag / SmartTag2 precision finding and digital car key features on UWB-equipped devices."
+    },
+    {
+        "id": "com.samsung.android.vexfwk.service",
+        "label": "Samsung VEX Framework Service",
+        "description": "Visual eXtension (VEX) framework service that hosts vision models for Galaxy AI features (object recognition, scene segmentation, image search).",
+        "removal": "caution",
+        "warning": "Removing disables Galaxy AI visual features that depend on VEX (Object Eraser, Generative Edit, Suggested Edits, Photo Assist)."
+    },
+    {
+        "id": "com.samsung.android.wallpaper.live",
+        "label": "Samsung Live Wallpaper",
+        "description": "Samsung's live / animated wallpaper provider.",
+        "removal": "delete",
+        "warning": "Removing means live wallpapers disappear from the Wallpaper picker. Static wallpapers continue to work."
+    },
+    {
+        "id": "com.samsung.android.wifi.intelligence",
+        "label": "Samsung Wi-Fi Intelligence",
+        "description": "Background optimizer that scores Wi-Fi networks, predicts hand-off, and feeds Auto Wi-Fi / Adaptive Connection Manager.",
+        "removal": "delete",
+        "warning": "Removing makes Wi-Fi network selection less aggressive but does not break Wi-Fi itself."
+    },
+    {
+        "id": "com.samsung.android.wifi.largetcpbuffer.resources",
+        "label": "Samsung Wi-Fi Large TCP Buffer Resources",
+        "description": "Configuration resources that tune the kernel TCP receive buffer for high-throughput Wi-Fi (Wi-Fi 7).",
+        "removal": "caution",
+        "warning": "Removing can degrade peak throughput on Wi-Fi 6E / Wi-Fi 7 networks."
+    },
+    {
+        "id": "com.samsung.android.wifi.resources.lls",
+        "label": "Samsung Wi-Fi LLS Resources",
+        "description": "Configuration resources for Wi-Fi Link Layer Statistics (LLS) used by diagnostic and adaptive-roaming logic.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.android.wifi.saeupgradeoffload.resources",
+        "label": "Samsung Wi-Fi SAE Upgrade Offload Resources",
+        "description": "Configuration resources for WPA3 SAE handshake offload to the Wi-Fi modem.",
+        "removal": "caution",
+        "warning": "Removing may force CPU-side SAE handshake on WPA3 networks (slightly slower connect)."
+    },
+    {
+        "id": "com.samsung.android.wifi.softapdualap.resources",
+        "label": "Samsung Wi-Fi SoftAP DualAP Resources",
+        "description": "Configuration resources enabling concurrent dual-band hotspot (2.4 GHz + 5 GHz / 6 GHz) when sharing internet via Wi-Fi.",
+        "removal": "caution",
+        "warning": "Removing limits the Wi-Fi hotspot to single-band operation."
+    },
+    {
+        "id": "com.samsung.android.wifi.softapowe.resources",
+        "label": "Samsung Wi-Fi SoftAP OWE Resources",
+        "description": "Resources enabling Opportunistic Wireless Encryption (OWE) on the Wi-Fi hotspot.",
+        "removal": "caution",
+        "warning": "Removing disables encrypted-but-open hotspots; existing WPA2/WPA3 hotspots still work."
+    },
+    {
+        "id": "com.samsung.android.wifi.softapqc.resources",
+        "label": "Samsung Wi-Fi SoftAP Qualcomm Resources",
+        "description": "Qualcomm-specific configuration resources for the SoftAP / mobile hotspot stack.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.android.wifi.softapsixghz.resources",
+        "label": "Samsung Wi-Fi SoftAP 6 GHz Resources",
+        "description": "Resources enabling the 6 GHz band on the mobile hotspot (Wi-Fi 6E / Wi-Fi 7 hotspot).",
+        "removal": "caution",
+        "warning": "Removing disables 6 GHz hotspot operation; 2.4 / 5 GHz hotspot still works."
+    },
+    {
+        "id": "com.samsung.drm",
+        "label": "Samsung DRM",
+        "description": "Samsung's DRM framework. Brokers OMA DRM / Samsung-signed content protection for Samsung TV+ and some carrier-bundled media.",
+        "removal": "caution",
+        "warning": "Required by Samsung TV+, certain carrier video apps, and downloaded ringtone packs. Widevine (Netflix, Disney+) is a separate stack and is NOT affected."
+    },
+    {
+        "id": "com.samsung.drmboost",
+        "label": "Samsung DRM Boost",
+        "description": "Companion service to Samsung DRM that prefetches license tokens for downloaded protected content.",
+        "removal": "caution",
+        "warning": "Removing alongside Samsung DRM may slow license acquisition."
+    },
+    {
+        "id": "com.samsung.gamedriver.sm8750",
+        "label": "Samsung Game Driver (SM8750 / Snapdragon 8 Elite)",
+        "description": "Updatable graphics driver package for the Snapdragon 8 Elite for Galaxy (codename 'sun', SoC ID SM8750). Loaded by Game Booster for supported titles.",
+        "removal": "caution",
+        "warning": "Removing forces games to fall back to the baseline GPU driver in firmware. May affect frame pacing or break titles that opt in to the updatable driver."
+    },
+    {
+        "id": "com.samsung.mediasearch",
+        "label": "Samsung Media Search",
+        "description": "Indexer that exposes on-device media to Bixby Vision, Samsung Gallery search, and Quick Search.",
+        "removal": "delete",
+        "warning": "Removing degrades Gallery / Quick Search results for media. Per-app media browsing continues to work."
+    },
+    {
+        "id": "com.samsung.mfcontents",
+        "label": "Samsung My Files Contents",
+        "description": "Default content provider for the Samsung My Files app: shortcuts, sample categories, and recommended content tiles.",
+        "removal": "delete",
+        "warning": "Removing only affects the Samsung My Files default tiles; the file manager itself continues to function."
+    },
+    {
+        "id": "com.samsung.petservice",
+        "label": "Samsung PetService",
+        "description": "Background service supporting the Samsung Health Pet Care / SmartThings Pet feature for camera-based pet monitoring.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.SMT.lang_de_de_f00",
+        "label": "Samsung TTS German Language Pack",
+        "description": "Samsung Text-to-Speech (SMT) German (Germany) voice resources. Only required if Samsung TTS engine is selected as the system TTS provider.",
+        "removal": "delete",
+        "warning": "Samsung TTS will fall back to a different language or refuse to speak German if removed."
+    },
+    {
+        "id": "com.samsung.SMT.lang_en_us_l03",
+        "label": "Samsung TTS English (US) Language Pack",
+        "description": "Samsung Text-to-Speech (SMT) US-English voice resources. Only required if Samsung TTS engine is selected as the system TTS provider.",
+        "removal": "delete",
+        "warning": "Samsung TTS will be unable to speak US English if removed; the device falls back to Google TTS or another configured engine."
+    },
+    {
+        "id": "com.samsung.ts43authservice",
+        "label": "Samsung TS.43 Authentication Service",
+        "description": "Implements the GSMA TS.43 Service Entitlement Configuration spec used for VoLTE, VoWi-Fi, and 5G slice activation against the carrier.",
+        "web": [
+            "https://www.gsma.com/newsroom/wp-content/uploads/TS.43-v8.0.pdf"
+        ],
+        "removal": "caution",
+        "warning": "Required by some carriers (T-Mobile, AT&T, EE, Verizon) for VoLTE / Wi-Fi calling activation. Removing can disable Wi-Fi calling."
+    },
+    {
+        "id": "com.samsung.videoscan",
+        "label": "Samsung Video Scan",
+        "description": "Background scanner that builds Samsung Gallery's per-clip metadata (highlights, faces, scenes) for video content.",
+        "removal": "delete",
+        "warning": "Removing makes Gallery's video search and Highlights features less useful."
+    },
+    {
+        "id": "com.sec.android.app.RilPhoneNumberService",
+        "label": "Samsung RIL Phone Number Service",
+        "description": "Helper bound by the Radio Interface Layer to surface the device's MSISDN / phone number to apps and the dialer.",
+        "removal": "caution",
+        "warning": "Removing can prevent the My Phone Number entry in Settings from populating; dialing and SMS continue to work."
+    },
+    {
+        "id": "com.sec.nrsaentitlement",
+        "label": "Samsung 5G NR-SA Entitlement",
+        "description": "Implements 5G New Radio Standalone (NR-SA) entitlement against the carrier — pre-flight check that the SIM is provisioned for 5G SA.",
+        "removal": "caution",
+        "warning": "Removing can prevent 5G SA activation on carriers that gate it behind entitlement (T-Mobile, Vodafone, others). 5G NSA usually still works."
     }
 ]

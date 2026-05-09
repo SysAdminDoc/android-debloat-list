@@ -3050,5 +3050,465 @@
         "label": "zpub.res",
         "description": "Third-party app pre-installed on ZTE phones.",
         "removal": "delete"
+    },
+    {
+        "id": "app.revanced.android.gms",
+        "label": "ReVanced microG (GmsCore)",
+        "description": "ReVanced fork of microG GmsCore — a libre re-implementation of Google Play Services used by patched apps (e.g. ReVanced YouTube) to run without proprietary Google Play Services.",
+        "web": [
+            "https://github.com/ReVanced/GmsCore"
+        ],
+        "removal": "caution",
+        "warning": "Required by ReVanced-patched apps that depend on Google Play Services APIs. Removing breaks those apps."
+    },
+    {
+        "id": "ch.protonmail.android",
+        "label": "Proton Mail",
+        "description": "Encrypted email client by Proton AG (Swiss). End-to-end encryption between Proton users; password-protected emails to non-Proton recipients.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=ch.protonmail.android",
+            "https://proton.me/security/transparency-report"
+        ],
+        "removal": "replace",
+        "suggestions": "email_clients"
+    },
+    {
+        "id": "com.acmeaom.android.myradarpro",
+        "label": "MyRadar Weather Radar Pro",
+        "description": "Weather radar / forecast app. Pro tier ad-free; free tier carries multiple ad networks and analytics SDKs.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.acmeaom.android.myradarpro",
+            "https://reports.exodus-privacy.eu.org/reports/com.acmeaom.android.myradarpro/latest/"
+        ],
+        "removal": "replace",
+        "suggestions": "weather_apps"
+    },
+    {
+        "id": "com.affirm.central",
+        "label": "Affirm",
+        "description": "Buy-now-pay-later financing app from Affirm Holdings. Heavy fingerprinting / tracking SDK footprint typical of fintech apps.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.affirm.central",
+            "https://reports.exodus-privacy.eu.org/reports/com.affirm.central/latest/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.aircall",
+        "label": "Aircall",
+        "description": "Aircall cloud business phone client.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.aircall"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.aurora.store",
+        "label": "Aurora Store",
+        "description": "Open-source unofficial Google Play Store client. Lets you download Play Store APKs anonymously or with your own Google account, without the Play Store app installed.",
+        "web": [
+            "https://gitlab.com/AuroraOSS/AuroraStore",
+            "https://f-droid.org/packages/com.aurora.store/"
+        ],
+        "removal": "delete",
+        "warning": "Aurora Store itself is a privacy-positive *replacement* for Play Store; this entry exists so users can audit it alongside other store apps."
+    },
+    {
+        "id": "com.brave.browser",
+        "label": "Brave Browser",
+        "description": "Chromium-based browser by Brave Software with built-in tracker / ad blocking and Tor mode. Ships an opt-in BAT cryptocurrency rewards module.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.brave.browser",
+            "https://github.com/brave/brave-browser",
+            "https://privacytests.org/android.html"
+        ],
+        "removal": "replace",
+        "warning": "Brave Rewards / Brave Wallet add cryptocurrency surface area many users don't want. Disable both in Settings if you keep Brave.",
+        "suggestions": "browsers"
+    },
+    {
+        "id": "com.creditkarma.mobile",
+        "label": "Credit Karma",
+        "description": "Intuit Credit Karma — free credit score, monetised via lending / card / insurance recommendations. Heavy ad-network and analytics SDK footprint.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.creditkarma.mobile",
+            "https://reports.exodus-privacy.eu.org/reports/com.creditkarma.mobile/latest/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.cyberlink.powerdirector.DRA140225_01",
+        "label": "CyberLink PowerDirector",
+        "description": "Mobile video editor by CyberLink. Free tier watermarks output and carries multiple ad SDKs.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.cyberlink.powerdirector.DRA140225_01",
+            "https://reports.exodus-privacy.eu.org/reports/com.cyberlink.powerdirector.DRA140225_01/latest/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.dd.doordash",
+        "label": "DoorDash",
+        "description": "DoorDash food delivery client. Heavy SDK footprint (location, ads, attribution).",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.dd.doordash",
+            "https://reports.exodus-privacy.eu.org/reports/com.dd.doordash/latest/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.discord",
+        "label": "Discord",
+        "description": "Discord chat / voice / video client. Closed-source, heavy on telemetry, but uniquely positioned as the de-facto community platform for many software / gaming / creator communities.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.discord",
+            "https://reports.exodus-privacy.eu.org/reports/com.discord/latest/"
+        ],
+        "removal": "replace",
+        "warning": "There is no truly equivalent libre alternative; the closest by-feature replacement is Element (Matrix) for federated chat or Revolt for Discord-like UX.",
+        "suggestions": "instant_messaging_apps"
+    },
+    {
+        "id": "com.eero.android",
+        "label": "eero",
+        "description": "Companion app for eero (Amazon) mesh Wi-Fi routers.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.eero.android"
+        ],
+        "removal": "delete",
+        "warning": "Required to manage eero routers; remove only if you've replaced eero hardware."
+    },
+    {
+        "id": "com.explorer.fileexplorer",
+        "label": "File Explorer (Speedy File Explorer)",
+        "description": "Generic third-party Android file manager. Free tier ad-supported.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.explorer.fileexplorer"
+        ],
+        "removal": "replace",
+        "suggestions": "file_managers"
+    },
+    {
+        "id": "com.geico.mobile",
+        "label": "GEICO Mobile",
+        "description": "GEICO insurance app — policy management, claims, ID cards. Uses Adobe Analytics, Glassbox session-replay, and other tracking SDKs.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.geico.mobile",
+            "https://reports.exodus-privacy.eu.org/reports/com.geico.mobile/latest/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.github.android",
+        "label": "GitHub",
+        "description": "Official GitHub mobile client by Microsoft / GitHub Inc.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.github.android"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.github.k1rakishou.chan.beta",
+        "label": "Kuroba Experimental",
+        "description": "Open-source 4chan / 2ch / lainchan / dvach client. Beta channel of K.1.S.S.'s Kuroba fork.",
+        "web": [
+            "https://github.com/K1rakishou/Kuroba-Experimental"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.gusto.money",
+        "label": "Gusto Wallet",
+        "description": "Companion app for Gusto's payroll / earned-wage-access product (Gusto Wallet). Tracks employee paystub access and prepaid card balances.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.gusto.money"
+        ],
+        "removal": "delete",
+        "warning": "Required only if your employer uses Gusto and you've opted into Gusto Wallet."
+    },
+    {
+        "id": "com.instacart.client",
+        "label": "Instacart",
+        "description": "Instacart grocery delivery client. Heavy SDK footprint (location, ads, attribution).",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.instacart.client",
+            "https://reports.exodus-privacy.eu.org/reports/com.instacart.client/latest/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.intuit.turbotax.mobile",
+        "label": "Intuit TurboTax",
+        "description": "Intuit TurboTax US tax-filing client. Uploads tax documents to Intuit cloud; multi-network analytics / advertising SDKs.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.intuit.turbotax.mobile",
+            "https://reports.exodus-privacy.eu.org/reports/com.intuit.turbotax.mobile/latest/"
+        ],
+        "removal": "delete",
+        "warning": "Free File via the IRS Direct File pilot or FreeTaxUSA / OLT.com are no-strings alternatives for many filers."
+    },
+    {
+        "id": "com.mapmyrunplus.android2",
+        "label": "MapMyRun (Plus)",
+        "description": "Under Armour MapMyRun — GPS run tracking. Owned by Under Armour; heavy attribution / advertising SDKs.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.mapmyrunplus.android2"
+        ],
+        "removal": "replace",
+        "suggestions": "fitness_trackers"
+    },
+    {
+        "id": "com.openai.chatgpt",
+        "label": "ChatGPT",
+        "description": "OpenAI ChatGPT mobile client. All prompts, voice, and image inputs are sent to OpenAI's cloud and may be retained for training unless explicitly opted out.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.openai.chatgpt",
+            "https://help.openai.com/en/articles/7730893-data-controls-faq"
+        ],
+        "removal": "replace",
+        "warning": "Enable 'Improve the model for everyone' OFF and 'Memory' OFF in Data Controls if keeping. For local-only LLM access, consider Ollama / Llama.cpp / PocketPal AI / MLC Chat.",
+        "suggestions": "automation_apps"
+    },
+    {
+        "id": "com.opentasker.app",
+        "label": "OpenTasker",
+        "description": "Tasker-compatible automation runtime with an open-source-leaning license. Reads / writes XML profiles compatible with Tasker.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.opentasker.app"
+        ],
+        "removal": "replace",
+        "suggestions": "automation_apps"
+    },
+    {
+        "id": "com.privateinternetaccess.android",
+        "label": "Private Internet Access (PIA) VPN",
+        "description": "PIA VPN client by Kape Technologies. Ownership history (Kape's prior involvement with adware-adjacent vendors) and the company's Israeli / UK Eyes presence are points often cited in privacy-focused reviews.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.privateinternetaccess.android",
+            "https://github.com/pia-foss/mobile-android"
+        ],
+        "removal": "replace",
+        "warning": "Mullvad (no-account ID, audited), IVPN (audited, no logs), and ProtonVPN (Swiss, F-Droid build) are commonly recommended as more privacy-respecting alternatives.",
+        "suggestions": "vpn_services"
+    },
+    {
+        "id": "com.reddit.frontpage",
+        "label": "Reddit",
+        "description": "Official Reddit mobile client. Heavy ad-tech / promoted-content surface; killed third-party clients via the 2023 API pricing change.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.reddit.frontpage",
+            "https://reports.exodus-privacy.eu.org/reports/com.reddit.frontpage/latest/"
+        ],
+        "removal": "replace",
+        "warning": "Most third-party clients were killed by the 2023 API change; surviving options use shared developer keys and may rate-limit. Consider Infinity (open-source, paid app key) or web access via redlib / safereddit frontends."
+    },
+    {
+        "id": "com.robinhood.android",
+        "label": "Robinhood",
+        "description": "Robinhood Markets brokerage and crypto client. Multi-network analytics, attribution, and ad SDKs.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.robinhood.android",
+            "https://reports.exodus-privacy.eu.org/reports/com.robinhood.android/latest/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.spotify.s4a",
+        "label": "Spotify for Artists",
+        "description": "Spotify-for-Artists analytics dashboard. Required only if you publish music as an artist on Spotify.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.spotify.s4a"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.squareup.cash",
+        "label": "Cash App",
+        "description": "Block, Inc. Cash App for peer-to-peer payments, banking, and bitcoin / stock trading. Heavy fingerprinting / analytics SDK footprint typical of fintech.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.squareup.cash",
+            "https://reports.exodus-privacy.eu.org/reports/com.squareup.cash/latest/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.topjohnwu.magisk",
+        "label": "Magisk",
+        "description": "Open-source systemless rooting / Zygote module loader maintained by topjohnwu. Powers Magisk Hide, MagiskSU, modules, and is the foundation other root managers (KernelSU, APatch) compete against.",
+        "web": [
+            "https://github.com/topjohnwu/Magisk"
+        ],
+        "removal": "delete",
+        "warning": "Removing Magisk un-roots the device. Apps that rely on Magisk modules will lose those features."
+    },
+    {
+        "id": "com.twitter.android",
+        "label": "X (Twitter)",
+        "description": "X Corp. (formerly Twitter) social client. Substantial ad / tracking SDK footprint.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.twitter.android",
+            "https://reports.exodus-privacy.eu.org/reports/com.twitter.android/latest/"
+        ],
+        "removal": "replace",
+        "warning": "Mastodon (Tusky / Megalodon / Moshidon) and Bluesky offer microblogging without the surveillance footprint; for read-only X access, a Nitter / xcancel front-end avoids the app entirely."
+    },
+    {
+        "id": "com.uvnv.mintsim",
+        "label": "Mint Mobile",
+        "description": "Mint Mobile (T-Mobile MVNO) account / activation app.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.uvnv.mintsim"
+        ],
+        "removal": "delete",
+        "warning": "Required only during initial Mint Mobile SIM / eSIM activation. Most account management can be done on the web."
+    },
+    {
+        "id": "com.x8bit.bitwarden",
+        "label": "Bitwarden",
+        "description": "Open-source password manager (Bitwarden Inc.). Self-hostable via Vaultwarden. Independent third-party security audits.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
+            "https://github.com/bitwarden/mobile",
+            "https://bitwarden.com/help/is-bitwarden-audited/"
+        ],
+        "removal": "replace",
+        "suggestions": "password_managers"
+    },
+    {
+        "id": "com.zillow.android.zillowmap",
+        "label": "Zillow",
+        "description": "Zillow real-estate listing browser. Heavy ad / analytics / location-tracking SDK footprint.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.zillow.android.zillowmap",
+            "https://reports.exodus-privacy.eu.org/reports/com.zillow.android.zillowmap/latest/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "dev.patrickgold.florisboard",
+        "label": "FlorisBoard",
+        "description": "Open-source, libre keyboard for Android. Privacy-focused, no internet permission, swipe typing in beta. Maintained by Patrick Goldinger and the FlorisBoard collective.",
+        "web": [
+            "https://github.com/florisboard/florisboard",
+            "https://f-droid.org/packages/dev.patrickgold.florisboard/"
+        ],
+        "removal": "replace",
+        "suggestions": "keyboards"
+    },
+    {
+        "id": "io.ente.auth",
+        "label": "Ente Auth",
+        "description": "Open-source, end-to-end-encrypted TOTP / 2FA authenticator with cloud sync. Built by the Ente photo-storage team. Independent third-party security audit.",
+        "web": [
+            "https://github.com/ente-io/ente",
+            "https://ente.io/blog/cryptography-audit/",
+            "https://f-droid.org/packages/io.ente.auth/"
+        ],
+        "removal": "replace",
+        "suggestions": "authenticators"
+    },
+    {
+        "id": "nu.gpu.nagram",
+        "label": "Nagram",
+        "description": "Nagram — fork of Telegram-FOSS / Nekogram with privacy hardening, sticker / emoji extras, and hidden chats. Open source.",
+        "web": [
+            "https://github.com/Nekogram/Nekogram"
+        ],
+        "removal": "replace",
+        "suggestions": "instant_messaging_apps"
+    },
+    {
+        "id": "org.adaway",
+        "label": "AdAway",
+        "description": "Open-source DNS-based system-wide ad / tracker blocker. Root mode rewrites /etc/hosts; non-root mode runs as a local VPN.",
+        "web": [
+            "https://github.com/AdAway/AdAway",
+            "https://f-droid.org/packages/org.adaway/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "org.fdroid.fdroid",
+        "label": "F-Droid",
+        "description": "Official F-Droid client — community-curated catalog of free / libre Android apps. Reproducible builds where possible.",
+        "web": [
+            "https://f-droid.org/",
+            "https://gitlab.com/fdroid/fdroidclient"
+        ],
+        "removal": "delete",
+        "warning": "F-Droid is itself a *replacement* for Play Store; this entry exists so users can audit it alongside other store apps."
+    },
+    {
+        "id": "org.fossify.filemanager",
+        "label": "Fossify File Manager",
+        "description": "Open-source file manager — community fork of the Simple Mobile Tools File Manager after Simple Mobile Tools was acquired.",
+        "web": [
+            "https://github.com/FossifyOrg/File-Manager",
+            "https://f-droid.org/packages/org.fossify.filemanager/"
+        ],
+        "removal": "replace",
+        "suggestions": "file_managers"
+    },
+    {
+        "id": "org.futo.voiceinput",
+        "label": "FUTO Voice Input",
+        "description": "Open-source on-device speech-to-text by FUTO. Runs Whisper locally; no cloud roundtrip. Source-available license (not OSI-approved but distinct from proprietary).",
+        "web": [
+            "https://gitlab.futo.org/keyboard/voiceinput",
+            "https://voiceinput.futo.org/"
+        ],
+        "removal": "replace",
+        "suggestions": "tts"
+    },
+    {
+        "id": "org.mistergroup.shouldianswer",
+        "label": "Should I Answer?",
+        "description": "Caller-ID and spam-call / SMS blocker. Crowdsourced community ratings. Free tier ad-supported but the app is open about its tracking footprint.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=org.mistergroup.shouldianswer",
+            "https://www.shouldianswer.net/"
+        ],
+        "removal": "replace",
+        "suggestions": "dialers"
+    },
+    {
+        "id": "org.schabi.newpipe",
+        "label": "NewPipe",
+        "description": "Open-source YouTube / SoundCloud / PeerTube / Bandcamp front-end. No Google Play Services dependency. Allows background playback, picture-in-picture, and downloads.",
+        "web": [
+            "https://github.com/TeamNewPipe/NewPipe",
+            "https://newpipe.net/",
+            "https://f-droid.org/packages/org.schabi.newpipe/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "org.skvalex.cr",
+        "label": "Call Recorder by skvalex",
+        "description": "Long-running third-party call recorder by Sergey Valeryanovich (skvalex). Closed source. Distributes outside Play Store; some builds require Magisk module for accessibility-tap call audio capture.",
+        "web": [
+            "https://www.callrecorder.skvalex.com/"
+        ],
+        "removal": "replace",
+        "warning": "Android 9+ progressively locked down call audio capture; many builds require root or Xposed for acceptable quality. Most jurisdictions require two-party consent — confirm legal status before recording.",
+        "suggestions": "call_recorders"
+    },
+    {
+        "id": "org.skvalex.cr.unlock",
+        "label": "Call Recorder by skvalex (Unlock Key)",
+        "description": "Companion unlock-key app for Call Recorder by skvalex. Required to unlock the paid features of org.skvalex.cr.",
+        "removal": "caution",
+        "warning": "Removing this disables paid features in Call Recorder. Don't remove independently of org.skvalex.cr."
+    },
+    {
+        "id": "org.swiftapps.swiftbackup",
+        "label": "Swift Backup",
+        "description": "Cloud-aware Android backup app — apps, SMS, call logs, wallpapers — with cloud-sync targets. Closed source. Free tier limited; paid tier removes ads and unlocks full features.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=org.swiftapps.swiftbackup",
+            "https://swiftapps.org/"
+        ],
+        "removal": "replace",
+        "suggestions": "backup_apps"
     }
 ]

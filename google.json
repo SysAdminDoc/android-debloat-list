@@ -1417,5 +1417,61 @@
         ],
         "removal": "replace",
         "suggestions": "barcode_scanners"
+    },
+    {
+        "id": "com.google.android.apps.aiwallpapers",
+        "label": "Google AI Wallpapers",
+        "description": "Generates AI 'imagined' wallpapers from text prompts. Pixel-exclusive, ships on Pixel 8+ via the Wallpaper & Style picker.",
+        "web": [
+            "https://blog.google/products/pixel/google-pixel-feature-drop-october-2023/"
+        ],
+        "removal": "delete",
+        "warning": "Removing only loses the AI Wallpapers tab in the Pixel wallpaper picker."
+    },
+    {
+        "id": "com.google.android.apps.bard",
+        "label": "Google Gemini",
+        "description": "Google Gemini app (formerly Bard). Replaces Google Assistant on most Pixel and Samsung devices. Sends queries to Google's cloud LLM.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.apps.bard",
+            "https://reports.exodus-privacy.eu.org/reports/com.google.android.apps.bard/latest/"
+        ],
+        "removal": "replace",
+        "warning": "Removing forces Assistant fallback. Local-first / privacy-respecting alternatives below.",
+        "suggestions": "automation_apps"
+    },
+    {
+        "id": "com.google.android.contactkeys",
+        "label": "Google Contact Keys",
+        "description": "Google's user-facing implementation of Android 14+ Contact Keys — verifies that an end-to-end-encrypted messaging key for a contact hasn't changed.",
+        "web": [
+            "https://developer.android.com/about/versions/14/features#contact-key-management"
+        ],
+        "removal": "caution",
+        "warning": "Removing breaks contact-key verification for E2EE messaging apps that integrate the API."
+    },
+    {
+        "id": "com.google.android.overlay.modules.healthfitness.forframework",
+        "label": "Google Health Fitness Framework Overlay",
+        "description": "Runtime Resource Overlay (RRO) that wires Health Connect mainline-module strings/configuration into the Android framework on supported devices.",
+        "removal": "unsafe",
+        "warning": "Removing breaks Health Connect integration with system Settings and other apps."
+    },
+    {
+        "id": "com.google.android.rkpdapp",
+        "label": "Google Remote Key Provisioning Daemon",
+        "description": "Implements Android Remote Key Provisioning (RKP) — replaces factory-installed attestation keys with periodically-rotated keys signed by Google's CA. Underpins hardware attestation, Play Integrity, key attestation, DRM provisioning.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/remote-key-provisioning"
+        ],
+        "removal": "unsafe",
+        "warning": "Removing breaks hardware attestation, Play Integrity API, key attestation for banking/payment apps, and DRM provisioning."
+    },
+    {
+        "id": "com.google.android.server.deviceconfig.resources",
+        "label": "Google DeviceConfig Resources",
+        "description": "Resources for the system DeviceConfig service that delivers Google-side feature flags / experiment values (Phenotype) to system components.",
+        "removal": "caution",
+        "warning": "Removing can stall A/B feature rollouts and lock the device on default flag values."
     }
 ]

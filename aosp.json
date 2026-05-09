@@ -1676,5 +1676,53 @@
         "id": "org.chromium.webview_shell",
         "description": "Simple Browser for WebView tester used in AOSP.",
         "removal": "delete"
+    },
+    {
+        "id": "com.android.companiondevicemanager.auto_generated_characteristics_rro",
+        "label": "Companion Device Manager Auto-Generated Characteristics RRO",
+        "description": "Auto-generated Runtime Resource Overlay used for Permission Controller's per-device characteristic descriptions (Wear / Glasses / TV companion devices).",
+        "removal": "unsafe",
+        "warning": "Build-system-generated overlay; removing produces missing strings in Companion Device Manager dialogs."
+    },
+    {
+        "id": "com.android.devicediagnostics",
+        "label": "Android Device Diagnostics",
+        "description": "Pixel / partner Device Diagnostics app that runs hardware self-tests (display, sensors, charging) and surfaces results in Settings > About > Diagnostics.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.phone.auto_generated_characteristics_rro",
+        "label": "Phone Auto-Generated Characteristics RRO",
+        "description": "Auto-generated Runtime Resource Overlay carrying default configuration values for the Phone (Telephony) service.",
+        "removal": "unsafe",
+        "warning": "Build-system-generated overlay; removing can break carrier-config-driven dialer behaviour."
+    },
+    {
+        "id": "com.android.providers.contactkeys",
+        "label": "Android Contact Keys Provider",
+        "description": "AOSP provider added in Android 14 (E2EE Contact Keys API) that lets messaging apps surface and verify per-contact end-to-end encryption keys via the system Contacts UI.",
+        "web": [
+            "https://developer.android.com/about/versions/14/features#contact-key-management"
+        ],
+        "removal": "unsafe",
+        "warning": "Removing breaks the E2EE Contact Keys API for any app that integrates it (Signal, Google Messages, etc.)."
+    },
+    {
+        "id": "com.android.providers.telephony.auto_generated_characteristics_rro",
+        "label": "Telephony Provider Auto-Generated Characteristics RRO",
+        "description": "Auto-generated Runtime Resource Overlay for the Telephony content provider's default values (APN templates, MMS sizes, carrier hints).",
+        "removal": "unsafe",
+        "warning": "Removing can break SMS / MMS / APN configuration."
+    },
+    {
+        "id": "com.android.virtualization.terminal",
+        "label": "Android Linux Terminal (AVF)",
+        "description": "Android 15+ Linux Terminal app built on the Android Virtualization Framework (AVF). Boots a minimal Debian VM directly on supported devices.",
+        "web": [
+            "https://source.android.com/docs/core/virtualization",
+            "https://android-developers.googleblog.com/2025/03/linux-terminal-on-android.html"
+        ],
+        "removal": "delete",
+        "warning": "Removing only loses the Linux Terminal feature itself. AVF infrastructure is provided by other modules and remains."
     }
 ]
