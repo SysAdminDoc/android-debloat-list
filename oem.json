@@ -20910,5 +20910,2356 @@
         "description": "Implements 5G New Radio Standalone (NR-SA) entitlement against the carrier — pre-flight check that the SIM is provisioned for 5G SA.",
         "removal": "caution",
         "warning": "Removing can prevent 5G SA activation on carriers that gate it behind entitlement (T-Mobile, Vodafone, others). 5G NSA usually still works."
+    },
+    {
+        "id": "org.lineageos.jelly",
+        "description": "LineageOS Browser App, based on chromium.\nSafe to remove if you don't need it or have replaced it with another app.\nOtherwise there will be no browser app on your device.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.cyanogenmod.filemanager",
+        "description": "Cyanogenmod file manager, safe to remove if you use another one.",
+        "removal": "replace"
+    },
+    {
+        "id": "org.lineageos.recorder",
+        "description": "LineageOS Voice Recorder App.\nSafe to remove if you don't need it or have replaced it with another app.",
+        "removal": "delete"
+    },
+    {
+        "id": "org.lineageos.aperture",
+        "description": "LineageOS Camera App.\nSafe to remove if you've replaced it with another app.\nOtherwise there will be no camera app on your device.",
+        "removal": "replace"
+    },
+    {
+        "id": "org.lineageos.etar",
+        "description": "LineageOS Calendar App.\nSafe to remove if you've replaced it with another app.\nOtherwise there will be no calendar app on your device.",
+        "removal": "replace"
+    },
+    {
+        "id": "org.lineageos.glimpse",
+        "description": "LineageOS Gallery App.\nSafe to remove if you've replaced it with another app.\nOtherwise there will be no gallery app on your device.",
+        "removal": "replace"
+    },
+    {
+        "id": "org.lineageos.twelve",
+        "description": "LineageOS Music App.\nSafe to remove if you don't need it or have replaced it with another app.",
+        "removal": "delete"
+    },
+    {
+        "id": "org.lineageos.camelot",
+        "description": "LineageOS PDF Viewer App.\nSafe to remove if you don't need it or have replaced it with another app.",
+        "removal": "delete"
+    },
+    {
+        "id": "co.aospa.dolby.xiaomi",
+        "description": "AOSPA's Dolby Atmos App on custom ROMs for Xiaomi phones. Providers support for Dolby Atmos on devices with Xiaomi hardware running custom ROMs.\nRemoving it just removes the Dolby Atmos feature and its app. Safe to remove if you don't need it.",
+        "removal": "replace"
+    },
+    {
+        "id": "io.chaldeaprjkt.gamespace",
+        "description": "The Game Space App, often found in custom ROMs. If you don't need it or don't play games, it's safe to remove.",
+        "removal": "replace"
+    },
+    {
+        "id": "org.omnirom.omnistyle",
+        "description": "OmniRom customization app. It lets you change the header image on the quick settings panel and the wallpaper for custom ROMs. It's included in custom ROMs mostly for the quick settings header images as the wallpaper activity is not normally accessible.",
+        "removal": "caution"
+    },
+    {
+        "id": "tokyo.witaqua.updater",
+        "description": "LineageOS Updater rebranded for the WitAqua custom ROM.\nNot safe to remove; could break Updater UI on devices with WitAqua ROMs.",
+        "removal": "caution"
+    },
+    {
+        "id": "androidzte",
+        "description": "Basing on APK inspection, this is a framework package that powers all the system UI on ZTE, Nubia, Axon & Blade devices. Totally not safe to remove, it's as important as 'android'",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.dti.blu",
+        "description": "This package is preinstalled on devices made by cellphone manufacturer BLU, installs unwanted games and other non-essential stuff. Its name 'Mobile Services' makes it scary to remove, but I highly recommend removing it. No damage foukd after removal (did so in at least two different models of Blu phones).",
+        "removal": "delete"
+    },
+    {
+        "id": "com.miui.miwallpaper.config.overlay",
+        "description": "Another overlay for com.miui.miwallpaper. Since all other overlays related to it are listed in recommended and marked as useless empty apps, this one is most likely the same.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.provision.overlay.miui",
+        "description": "An overlay for com.android.provision for Xiaomi devices. Since com.android.provision is in Unsafe, this should also be in Unsafe.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.miui.safetycenter.config.overlay",
+        "description": "An overlay for com.miui.safetycenter providing configurations and preferences. Safe to delete if com.miui.safetycenter is removed.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.miui.safetycenter.res.overlay",
+        "description": "An overlay for com.miui.safetycenter providing resources and preferences. Safe to delete if com.miui.safetycenter is removed.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.miui.settings.rro.device.systemui.overlay",
+        "description": "A device-specific overlay for com.android.settings on Xiaomi devices customizing the system UI. Likely not something that's safe to remove.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.google.android.wifi.resources.xiaomi",
+        "description": "An overlay-xiaomi addition for com.android.wifi.resources, presumably xiaomi bloat. No issues with Wi-Fi found after removal.\nThere's no such package as com.google.android.wifi.resources, but only com.android.wifi.resources, so it's likely a part of a google addition for Wi-Fi services, so likely bloat. Safe to delete.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.miui.settings.rro.device.config.overlay",
+        "description": "Presumably a MIUI/HyperOS overlay com.android.settings providing device-specific configurations for system settings.\nLikely not something you would want to remove. Will likely cause issues.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.miui.permissioncontroller.overlay",
+        "description": "Presumably a MIUI/HyperOS overlay for com.gooogle.android.permissioncontroller. Not safe to delete.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "android.autoinstalls.config.Xiaomi.whyred",
+        "description": "App that configures preinstalled apps and initial preferences on Xiaomi Redmi Note 5 / Xiaomi Redmi Note 5 Pro (as their both's codename is whyred).\nOnly needed on device setup, dormant and useless afterwards. It's restored automatically in case of a factory reset. Safe to delete.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.gallery.player",
+        "description": "Old MIUI Gallery app's media player, a separate package from com.miui.gallery. Will likely break playing and presumably viewing media in the MIUI Gallery app.\nNot seen on HyperOS but present on some old MIUI versions. Safe to remove if com.miui.gallery is already removed.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.xiaomi.phone.overlay",
+        "description": "An overlay needed for com.xiaomi.phone. Safe to remove if com.xiaomi.phone has been removed.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.xiaomi.phone",
+        "description": "A MIUI/HyperOS extension for telephony services. Called HyperPhone (at least on HyperOS), I don't know how is it named in MIUI, if you know, please edit this package and add it's MIUI name here. (in GitHub)\nIt's similar to com.xiaomi.bluetooth by it's purpose, but here it's a Xiaomi extension for telephony services. Deleting it caused no data loss or issues with telephony, calls, mobile data, and other on HyperOS 2.0.",
+        "removal": "caution"
+    },
+    {
+        "id": "android.miui.overlay.telephony",
+        "description": "Likely an important overlay for telephony services and com.android.providers.telephony, specific for devices running HyperOS/MIUI. Not safe to delete.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.miui.misightservice",
+        "description": "Telemetry and diagnostics collector app that sends analytics to Xiaomi servers and has almost no use for user.\nSomething on the level of com.miui.msa or com.miui.daemon. Worth deleting.\nConstantly connects somewhere and sends/receives up to 100KB of data per day to/from an unknown source. This also means it often runs in background.\nIt's labeled as Blur and has orange-white MI icon, but it just hides under it. No blur/ui/any other issues seen after around a month of use of HyperOS 2.0 with this removed.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xiaomi.cameramind",
+        "description": "The core of all AI features for Xiaomi's camera app. Won't impact other camera apps' AI features.\nSafe to delete if you use another camera app, otherwise, removal may cause background connection issues.",
+        "required_by": [
+            "com.android.camera"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.xiaomi.bluetooth.rro.device.config.overlay",
+        "description": "A device-specific overlay for com.xiaomi.bluetooth. Safe to remove if com.xiaomi.bluetooth is removed.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.miui.euicc",
+        "description": "The LPA app that is constantly running in background, consuming RAM and battery. This app is the core of all the eSIM services on Xiaomi devices, runs and drains resources even if you have no eSIM.\nConstantly being found in running processes list. No issues appeared after removing it on HyperOS 2.0 and using it for over a month.\nTelephony and all settings stayed intact, worth deleting this if you don't use an eSIM.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.miui.cotaservice",
+        "description": "MIUI's COTA (Configuration Over-The-Air) service. Pretty much the same as com.google.configupdater but for miui services.\nUnlike google's config updater, it constantly connects to the web and sends/receives data from an unknown source. Might cause obscure issues with telephony and Xiaomi services.\nSafe to delete if you've deleted all Xiaomi services like Xiaomi Cloud, GetApps, xmsf, etc... and !!! have logged out of your Xiaomi Account !!! Pretty much all is same as with com.google.configupdater. Deleting it on HyperOS 2.0 causes no issues.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.providers.telephony.overlay.miui",
+        "description": "Required for com.android.providers.telephony on devices running HyperOS/MIUI. Not safe to delete.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.phone.cust.overlay.miui",
+        "description": "An overlay customizing default behavior and preferences for com.android.phone on devices running HyperOS/MIUI. Safe to remove if com.android.phone is removed.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.networkstack.overlay.miui",
+        "description": "Required for com.android.networkstack on devices running HyperOS/MIUI. Not safe to delete.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.carrierconfig.overlay.miui",
+        "description": "Required for com.android.carrierconfig on devices running HyperOS/MIUI. Safe to remove if com.android.carrierconfig is removed.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.thememanager.customizethemeconfig.config.overlay",
+        "description": "An overlay for Xiaomi's com.android.thememanager providing theme config customization default preferences and configs. Safe to remove if com.android.thememanager is removed.",
+        "removal": "replace"
+    },
+    {
+        "id": "android.res.overlay_305",
+        "description": "An overlay that draws over android. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "unsafe"
+    },
+    {
+        "id": "android.res.overlay_310_311",
+        "description": "An overlay that draws over android. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.browser.res.overlay_305",
+        "description": "An overlay that draws over the browser, probably safe to disable if you use another browser. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.carrierconfig.res.overlay_305",
+        "description": "An overlay that draws over the android.carrierconfig package, probably safe if you do not use calls/SMS. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.carrierconfig.res.overlay_310_311",
+        "description": "An overlay that draws over the android.carrierconfig package, probably safe if you do not use calls/SMS. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.advancedwidget.photo",
+        "description": "Videos and photos, safe to remove: https://www.apkmirror.com/apk/sony-mobile-communications/photos-and-videos/photos-and-videos-2-2-a-0-8-release/photos-and-videos-2-2-a-0-8-android-apk-download",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sonyericsson.android.camera",
+        "description": "Sony's default camera app, can be replaced but you will lose camera features",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.partnerbrowsercustomizations.chromeHomepage.res.overlay_310_311",
+        "description": "Adds a customised homepage to Google Chrome provided by either OEM or carrier. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "replace"
+    },
+    {
+        "id": "com.fingerprints.fido.asm",
+        "description": "Fido Alliance fingerprint. It is possible that ASM stands for Authentication Service Module/Application Security Module",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.phone.product.res.overlay",
+        "description": "Overlays the phone app, needed if you use the device for calls/SMS/contact management. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.phone.product.res.overlay.no_imei_emergency_call",
+        "description": "Unsure but I would just leave it as you need to stay safe. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.phone.res.overlay_305",
+        "description": "Overlays the phone app, keep if you want calls/SMS/contact management to work. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.providers.icccust",
+        "description": "Looks to be linked to SIM management. I would advise keeping it",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.providers.partnerbookmarks.res.overlay_305",
+        "description": "Overlays Bookmark customisation, probably not needed. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.providers.partnerbookmarks.res.overlay_310_311",
+        "description": "Overlays Bookmark customisation, probably not needed. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.providers.settings.res.overlay_305",
+        "description": "Overlays system settings, probably needed. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.settings.res.overlay_305",
+        "description": "Overlays system settings, probably needed. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.settings.res.overlay_310_311",
+        "description": "Overlays system settings, probably needed. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.stk.product.res.overlay.common",
+        "description": "SIM Tool Kit overlay, best kept. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.systemui.res.overlay_305",
+        "description": "Overlays SystemUI, best kept. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.systemui.res.overlay_310_311",
+        "description": "Overlays SystemUI, best kept. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.noknok.android.mfac.service",
+        "description": "Part of the FIDO authentication for fingerprint",
+        "removal": "caution"
+    },
+    {
+        "id": "com.qti.vzw.ims.internal.tests",
+        "description": "Seems to be linked with Verizon internal tests but many sources including XDA developers suggest getting rid",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sony.nfx.app.sfrc",
+        "description": "Tied to Sony's recommendations and can be safely got rid of, maybe break suggestions/recommendations",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sonyericsson.android.bootinfo",
+        "description": "May break boot, bootloader checks. No removal tested",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.sonyericsson.android.camera.product.res.overlay.enable.information.entry",
+        "description": "Overlays default camera app, removing could break camera features. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.android.camera.product.res.overlay.enable.scene.setting",
+        "description": "Overlays default camera app, removing could break camera features. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.android.servicemenu",
+        "description": "Provides access to service menus for testing",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sonyericsson.android.servicemenu.product.res.overlay.suzu",
+        "description": "Overlays service com.sonyericsson.android.servicemenu. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sonyericsson.autopoweroffservice",
+        "description": "This service helps safe shutdown, could cause negative effect by removing but system settings > apps > autopoweroff > lets you disable it",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.cameraextension.permission",
+        "description": "Provides third party apps access to AR effect and other plugins, removing will break camera functionality",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.crashmonitor",
+        "description": "Sony's crash monitor",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.credentialmanagerservice",
+        "description": "Said to be Sony's custom credential storage and obsolete these days due to Google's storage manager",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sonyericsson.customizedsettings",
+        "description": "Settings that are customised by carriers for region specifics",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.devicemonitor",
+        "description": "Safe to remove if you don't use PC to manage device",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sonyericsson.fmradio",
+        "description": "Sony's FM radio app, safe to remove if you don't use it",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sonyericsson.home",
+        "description": "Sony's default launcher, do not remove unless you have another launcher or you will brick your device",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sonyericsson.home.product.res.overlay",
+        "description": "Launcher overlay, best left enabled. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.home.res.overlay_305",
+        "description": "Launcher overlay, best left enabled. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.lockscreen.uxpnxt",
+        "description": "Sony lockscreen settings",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.mtp.extension.factoryreset",
+        "description": "Sony phone says 'lock screen settings'. Removing it can cause bootloop",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.sonyericsson.omadl",
+        "description": "Provides carrier/APN updates and OTA in some cases. Sony phone says 'OMA download client', best left enabled",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.organizer",
+        "description": "Tied to Sony calendar, deprecated by Google and other calendars",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sonyericsson.photoeditor",
+        "description": "Sony's photo editor: https://www.apkmirror.com/apk/sony-mobile-communications/photo-editor",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sonyericsson.providers.cnap",
+        "description": "Allows carriers to show incoming caller name instead of just the number via CNAP, best left enabled to see who is calling",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.psm.sysmonservice",
+        "description": "Power management, Stamina mode. Best left enabled",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.settings",
+        "description": "This is the system settings app, do not remove it",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.sonyericsson.settings.res.overlay_310_311",
+        "description": "System settings overlay, do not remove. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.sonyericsson.setupwizard",
+        "description": "Onboarding that occurs after factory reset or first boot, safe to remove",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sonyericsson.setupwizard.res.overlay_305",
+        "description": "Overlays setup wizard during first boot or after factory reset, safe to remove. Find out more by running: adb shell cmd overlay list, to see other packages",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.simdetection",
+        "description": "Detects SIM connection, best left enabled",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.soundenhancement",
+        "description": "Not essential for audio to work but provides sound effects/enhancements such as Clear Audio+",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sonyericsson.suquashi.soundpicker",
+        "description": "Ringtone/notification/alarm time picker",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.sonyericsson.tetherentitlementcheck",
+        "description": "Needed for tethering checks such as carrier conditions and regional restrictions, safe to remove if you don't tether/hotspot",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.updatecenter",
+        "description": "The system updater found on settings > about > software update, safe to remove if your device no longer receives updates",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.updatecenter.res.overlay_305",
+        "description": "Overlay for updater found in Settings > about > system update, safe to remove if your device no longer gets updates",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonyericsson.usbux",
+        "description": "Provides the USB options such as MTP, PTP, charge only. Leave enabled",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonymobile.android.addoncamera.dual",
+        "description": "Provides an addon to enable dual camera functionality, safe to remove if you don’t need camera add-ons",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sonymobile.btidd",
+        "description": "Bluetooth stack identifier, may be tied to pairing/security. Best to keep enabled",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sonymobile.cameracommon",
+        "description": "Shared library for Sony’s camera app and add-ons. Removing breaks camera functionality",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.sonymobile.coresettings",
+        "description": "Contains Sony-specific customisations and settings overlays. Needed for Xperia custom features",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mi.appfinder",
+        "description": "HyperOs 2.0.202.0, it didn't break the system or ui search function or poco launcher search app function. Havent heard of it breaking stuff for others so dont think it's of much concern\n has 15 trackers",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.widgetapp.yahooedge.news",
+        "description": "Special edge panel widget for Yahoo News\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.tcl.guard",
+        "description": "TGuard. Runs in the background on boot.\nHas these services:\"Online Support\" (related to `com.tcl.usercare`?),\"IO Limit\",\"Health\" (device health?) stuff, battery and low-storage diagnostics. On model T509A, it links to `libTclRootCheck.so` (native shared dynamic library), very sus.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.tcl.ttvs",
+        "description": "TCSCore. Runs in the background all the time. Uses some Google tracking APIs. May request permission `org.microg.gms.STATUS_BROADCAST`, probably for detecting\"illegitimate\" Play Services installations.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.tct.contentcenter",
+        "description": "A panel that opens from the launcher (similar to\"samsung Free\"). Has news, weather forecasts, and a game center (similar to\"Game Booster\"). Has lots of trackers from facebook, bytedance, anythink, google, and other 3rd-parties",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lge.sizechangable.musicwidget.music",
+        "description": "Music widget\nIt breaks when LG Music is removed.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.lge.upsell",
+        "description": "Contains dialogs from different carriers about upgrading the mobile plan\nShould be safe to remove?\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.lge.voicerecorder",
+        "description": "LG Voice Recorder\nSimple voice recording app.\nSafe to remove.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.lge.theme.blackgold",
+        "description": "LG Black Bold theme.\nSafe to remove, but also probably pointless to do so as most theme packages are just data containers.\nMake sure you don't delete the package for the theme you're currently using. I don't know what will happen then.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.nbbird.hardwareinfo",
+        "description": "The com.nbbird.hardwareinfo package is likely associated with providing detailed information about the device’s hardware components, such as CPU, GPU, memory, and other system specifications. This app might be used for diagnostics or detailed hardware monitoring specific to the device. Removing it might disable access to this hardware information and could affect the ability to view detailed system diagnostics. However, it generally does not affect core system functionality and should not cause bootloop issues.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.nbbsw.mmi_test",
+        "description": "The com.nbbsw.mmi_test package is likely associated with the Mobile Management Interface (MMI) testing tools provided by the OEM, possibly used for diagnostic and testing purposes to check various hardware and software functions of the device. Removing this package might impact the ability to perform certain diagnostic tests or troubleshooting functions provided by the OEM. While its removal should not affect the basic operation of the device, it could limit access to some specific testing tools or functionalities, which might be used for device maintenance or troubleshooting.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.nbbsw.theme",
+        "description": "The com.nbbsw.theme package is likely related to theme management or customization features provided by the OEM, allowing users to apply and manage themes or visual styles on the device. Since many third-party launchers and theme apps available on Google Play offer similar or enhanced customization options, removing this package is generally recommended.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nuumobile.agingtest",
+        "description": "The com.nuumobile.agingtest package is used for running diagnostic tests related to hardware aging or wear, likely provided by the OEM. Since this package is mainly for diagnostic purposes and does not impact the core functionality of the device, it is safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.yandex.searchapp",
+        "description": "Yandex' Search App\nRussian search app, similar to the Google search bar that appears on the phone's home screen.",
+        "removal": "delete"
+    },
+    {
+        "id": "ru.vk.store",
+        "description": "Rustore, russian app market, preinstalled by russian law from 2019",
+        "removal": "delete"
+    },
+    {
+        "id": "ru.ivi.client",
+        "description": "Ivi, russian video service, preinstalled by russian law from 2019",
+        "removal": "delete"
+    },
+    {
+        "id": "ru.litres.android",
+        "description": "Litres, russian bookstore service, preinstalled by russian law from 2019",
+        "removal": "delete"
+    },
+    {
+        "id": "ru.ozon.app.android",
+        "description": "Ozon, russian marketplace, preinstalled by russian law from 2019",
+        "removal": "delete"
+    },
+    {
+        "id": "ru.dublgis.dgismobile",
+        "description": "2GIS, russian mapping service, preinstalled by rus law from 2019",
+        "removal": "delete"
+    },
+    {
+        "id": "com.simalliance.openmobileapi.eseterminal",
+        "description": "The com.simalliance.openmobileapi.eseterminal package is part of the Open Mobile API framework, which provides services for accessing and managing Secure Elements (SEs) on the device, such as SIM cards or embedded secure elements. This package specifically handles communication with the ESE (Embedded Secure Element) terminal. Removing this package might affect the device's ability to interact with certain secure services or applications that rely on the SE framework. While it is not crucial for basic device functionality, it may impact specific features related to secure transactions or services.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.lge.concierge",
+        "description": "LG Smart Notice\nProvides a widget which has a clock, weather, lists notifications and much more, it's LG's version of Google Now.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.lge.lockscreen.livewallpaper.kaleidoscope",
+        "description": "The Kaleidoscope Live Wallpaper used in the lockscreen.\nSafe to remove but make sure it's not set as the Wallpaper.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.oplus.callrecorder",
+        "description": "Allows you to toggle call recording in the stock Dialer app.\nSafe to remove?\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.providers.media.module",
+        "description": "Media picker module\nNot recommended to remove this as it can break apps that use the photo picker.\n",
+        "removal": "caution"
+    },
+    {
+        "id": "com.tcl.android.launcher.hotapp",
+        "description": "Hot Apps. Unrelated to Recent Apps (launcher and/or app-switcher).\nSeemingly empty, but requests network+internet access. The manifest references `com.bumptech.glide.integration.okhttp3.OkHttpGlideModule`",
+        "removal": "delete"
+    },
+    {
+        "id": "com.tct.iris.overlay_product",
+        "description": "Related to TCL NXTVISION",
+        "removal": "replace"
+    },
+    {
+        "id": "com.tct.nxtvision_ui",
+        "description": "TCL NXTVISION (code-name `iris`) Settings front-end",
+        "removal": "replace"
+    },
+    {
+        "id": "com.tct.nxtvision_ui.overlay_product",
+        "description": "TCL NXTVISION (code-name `iris`) Settings front-end overlay",
+        "removal": "replace"
+    },
+    {
+        "id": "com.oplus.sau",
+        "description": "System Upgrade Service\nAllows you to update your phone.\nRuns at boot and could cause bootloop when removed.\n",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oppo.usercenter",
+        "description": "Just bloatware for account details and marketing of OPPO. Cannot log into OPPO/HeyTap account after disabling. Safe to disable if OPPO account is not used.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.aura.oobe.solutions",
+        "description": "Aura from Unity\nPersistent notification until you click on it and agree to install games. Sort of game cloud pre-installed in some Nothing & CMF Phone\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.aura.oobe.lenovo",
+        "description": "Aura from Unity\nPersistent notification until you click on it and agree to install games. Sort of game cloud pre-installed in some Lenovo\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.aura.oobe.ml",
+        "description": "Aura from Unity\nPersistent notification until you click on it and agree to install games. Sort of game cloud pre-installed in some Motorola\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.nfc.felicalocktest",
+        "description": "Testing FeliCa carrier remote lock. Common to Softbank, au, and docomo.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.overlay.dcmconfig",
+        "description": "Static overlay that sets \"config_systemContacts\" to \"docomo phonebook\" (customized com.android.contacts).\nNOTE: Safe to remove, reboot needed after uninstalling.\n\"docomo phonebook\" itself is safe to remove whether this overlay is installed.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.android.overlay.dcmconfig.sms",
+        "description": "Static overlay that sets \"config_defaultSms\" to \"+Message\" (com.nttdocomo.android.msg).\nNOTE: Safe to remove, reboot needed after uninstalling.\n\"+Message\" itself is safe to remove whether this overlay is installed.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.android.nfc.resources.japan",
+        "description": "Overlay for com.android.nfc",
+        "removal": "caution"
+    },
+    {
+        "id": "jp.co.omronsoft.mushroom.commonphrase",
+        "description": "Provides a feature called \"Mushroom\" that is a phrase table shared between Japanese keyboards.\nJapanese keyboards still work without this.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.oplus.aicall",
+        "description": "Provides AI summaries in the ODialer app",
+        "removal": "replace"
+    },
+    {
+        "id": "com.oplus.aimemory",
+        "description": "Mind Space (also called 'Breeno Memory')\nSaves and summarizes content using AI. Runs on the background, even though when you're not using it.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.oplus.aiwriter",
+        "description": "AI Writer\nPop-up for AI text generation, often appears in places that are not text input fields.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.oplus.aipaint",
+        "description": "AI Paint\nUnsure what it's used for but probably has to do with editing images.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.music",
+        "description": "The com.android.music package is the default music player app that comes pre-installed on many Android devices. It provides basic music playback functionality and may include features like playlists and library management. Since there are many better and more feature-rich music player apps available on Google Play, and this app does not offer any unique features specific to your device, removing it should not impact the core functionality of the operating system.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.writeimei",
+        "description": "The com.android.writeimei package is responsible for handling the IMEI (International Mobile Equipment Identity) number on the device. This app is used for writing or managing the device’s IMEI, which is a unique identifier for mobile devices. Removing or tampering with this package can cause significant issues, such as loss of network connectivity, inability to make calls or send texts, and potential bootloop issues.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.bird.motionrecognition",
+        "description": "The com.bird.motionrecognition package is likely related to motion recognition features on your device, such as gesture controls or other motion-based functionalities. This package may be specific to the OEM and provide unique functionalities not found in standard Android builds. While removing it might disable certain gesture or motion-based features, it should not impact core system functionalities.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.val.hardware",
+        "description": "FactoryApp\nOEM hardware diagnostic tool for manufacturing/service testing (camera, Bluetooth, WiFi, FM radio, telephony, battery, flashlight). Requires broad system permissions (reboot, audio/phone mods, secure settings).\nNot for end-users; safe to remove to reduce bloat.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.wifi.resources.wpa2",
+        "description": "Needed for WiFi.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.sec.svoice.lang.de_DE",
+        "description": "This is the German language pack for Samsung's old S Voice assistant, enabling speech recognition and responses.\nPath: /system/priv-app/SVoiceLang_GermanPack_DE_1.0/SVoiceLang_GermanPack_DE_1.0.apk",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.svoice.lang.en_US",
+        "description": "This is the English language pack for Samsung's old S Voice assistant, enabling speech recognition and responses.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.svoice.lang.es_ES",
+        "description": "This is the Spanish language pack for Samsung's old S Voice assistant, enabling speech recognition and responses.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.svoice.lang.fr_FR",
+        "description": "This is the French language pack for Samsung's old S Voice assistant, enabling speech recognition and responses.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.svoice.lang.it_IT",
+        "description": "This is the Italian language pack for Samsung's old S Voice assistant, enabling speech recognition and responses.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.svoice.lang.ru_RU",
+        "description": "This is the Russian language pack for Samsung's old S Voice assistant, enabling speech recognition and responses.",
+        "removal": "replace"
+    },
+    {
+        "id": "mobile.miki",
+        "description": "Samsung's Factory Mode app for hardware testing and diagnostics.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.sos",
+        "description": "Emergency SOS app for quick access to emergency services and contacts.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.nfc.overlay.common",
+        "description": "Common overlay configuration for NFC functionality.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.systemui.clocks.flex",
+        "description": "Flexible clock interface for system UI customization.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.systemui.overlay.pixelbatteryhealthconfig",
+        "description": "Battery health overlay for Pixel devices.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.pixelsystemservice",
+        "description": "System service app for Pixel device management.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.google.android.pixel.avatarpicker",
+        "description": "Avatar picker for Google Pixel personalization.",
+        "removal": "replace"
+    },
+    {
+        "id": "android.auto_generated_characteristics_rro",
+        "description": "Automatically generated RRO characteristics for Android customization.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.retaildemo",
+        "description": "Retail demo app for product displays in stores.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.apps.pixel.creativeassistant",
+        "description": "Creative Assistant for media editing and artistic tasks on Pixel devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.systemui.clocks.bignum",
+        "description": "Large clock display interface for the system UI.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.nfc.overlay",
+        "description": "NFC overlay configuration for system-level settings.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.settings.shiba",
+        "description": "Settings app with internal device-specific features.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.telephony",
+        "description": "Core telephony system app for managing calls and messaging.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.systemui.overlay.pixelvpnconfig",
+        "description": "Pixel VPN configuration overlay for network management.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.devicediagnostics.auto_generated_rro_vendor__",
+        "description": "Device diagnostics and vendor-specific overlays for troubleshooting.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.settings.overlay.shiba",
+        "description": "Device-specific settings overlay for internal features.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.devicelockcontroller",
+        "description": "Device lock and security controller for Android devices.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.google.android.avatarpicker",
+        "description": "Avatar picker for Google account customization.",
+        "removal": "replace"
+    },
+    {
+        "id": "android.autoinstalls.config.google.nexus",
+        "description": "Auto-install configuration for Google apps on Nexus devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.overlay.devicelockcontroller",
+        "description": "Pixel device lock configuration overlay.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.microdroid.empty_payload",
+        "description": "Empty payload for MicroDroid sandbox testing.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.tetheringentitlement",
+        "description": "Tethering entitlement management for Android devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.googlequicksearchbox.nga_resources",
+        "description": "Resources for Google Assistant quick search.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.pixel.iwlan",
+        "description": "IWlan optimization for Pixel Wi-Fi connections.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.overlay.pixelconfig2021",
+        "description": "Pixel 2021 configuration overlay for device features and UI.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.compos.payload",
+        "description": "Payload for Google's Compose system handling notifications and widgets.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.pixeldisplayservice.auto_generated_rro_product__",
+        "description": "Auto-generated display service configurations for Pixel devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.storagemanager",
+        "description": "Storage management app for Android devices.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.apps.diagnosticstool",
+        "description": "Diagnostic tool for troubleshooting Google services and system issues.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.wallpaper.effects",
+        "description": "Wallpaper visual effects for Android devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.pixeldisplayservice",
+        "description": "Display management service for Pixel devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.systemui.clocks.inflate",
+        "description": "Customizable clock display for system UI.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.systemui.clocks.calligraphy",
+        "description": "Calligraphy-style clock faces for system UI.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.bluetooth",
+        "description": "Bluetooth management for Android devices.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.apps.wallpaper.pixel",
+        "description": "Wallpaper app for Google Pixel devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.euiccpixel.permissions",
+        "description": "Permission manager for EU-configured Google Pixel devices.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.rilextension",
+        "description": "Google Assistant extension for enhanced functionality.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.internal.display.cutout.emulation.avoidAppsInCutout",
+        "description": "Avoid displaying apps in the notch area of the screen.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.devicediagnostics.auto_generated_rro_product__",
+        "description": "Auto-generated diagnostics configurations for Android devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.systemui.clocks.weather",
+        "description": "Clock with integrated weather updates for system UI.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.euiccpixel.overlay.zuma",
+        "description": "EU Pixel device overlay for regional functionality.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.iwlan",
+        "description": "IWLAN feature manager for enhanced connectivity.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.systemui.clocks.numoverlap",
+        "description": "Adjustable number overlap for system clock display.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.settings.overlay.pixelvpnconfig",
+        "description": "VPN configuration for Pixel devices.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.virtualmachine.res",
+        "description": "Resources for Android virtual machine environment.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.telephony.imsmedia",
+        "description": "IMS media management for VoLTE and video calling.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.healthconnect.overlay",
+        "description": "Health Connect overlay for fitness data integration.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.overlay.trafficlightfaceoverlay",
+        "description": "Traffic light face overlay for system UI enhancement.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.uwb.resources",
+        "description": "UWB technology resources for location tracking.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.systemui.clocks.growth",
+        "description": "Growth-themed dynamic clock display for system UI.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.inkbook.awesomereader",
+        "description": "Stock reader app on Inkbook e-readers. Uninstall only if planning to use a different reader.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.inkbook.exoereader",
+        "description": "Stock reader app on Inkbook e-readers. Uninstall only if planning to use a different reader.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.inkbook.os.plus",
+        "description": "App repository for Inkbook e-readers: Kindle, Kobo etc. Safe to uninstall if not using them. Also installs and updates EinkBro and a stats tracking app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.inkbook.os.library",
+        "description": "Default library app on Inkbook e-readers. Will break the UI if uninstalled so only do so if you plan to replace the default UI app with e.g. SimpleLauncher or somehting of the sort.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.inkbook.os.settings",
+        "description": "Wrapper for Android settings which hides most irrelevant settings for e-ink devices e.g enabling animations.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.zte.linkspeedup",
+        "description": "Causes bootloop",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.redstone.ota.ui",
+        "description": "This malware disguises itself as an update app, tracks the user and installs malware in the background.\nhttps://www.virustotal.com/gui/file/0aefcffd253e575474dbbbf1f60d77cfaa679c0abe3241d0ee397fbbb2ad9924/details\nhttps://www.malwarebytes.com/blog/news/2021/04/pre-installed-auto-installer-threat-found-on-android-mobile-devices-in-germany\nhttps://thehackernews.com/2021/04/pre-installed-malware-dropper-found-on.html",
+        "removal": "delete"
+    },
+    {
+        "id": "com.wagd.gem",
+        "description": "This malware is capable of sending malicious messages via WhatsApp, opening new tabs in the default web browser to game websites, downloading more malicious apps, and possibly other malicious behaviors.\nThe malicious WhatsApp messages are most likely in order to further spread the infection to other mobile devices.\nhttps://www.malwarebytes.com/blog/news/2021/04/pre-installed-auto-installer-threat-found-on-android-mobile-devices-in-germany",
+        "removal": "delete"
+    },
+    {
+        "id": "com.wagd.smarter",
+        "description": "This malware is capable of sending malicious messages via WhatsApp, opening new tabs in the default web browser to game websites, downloading more malicious apps, and possibly other malicious behaviors.\nThe malicious WhatsApp messages are most likely in order to further spread the infection to other mobile devices.\nhttps://www.malwarebytes.com/blog/news/2021/04/pre-installed-auto-installer-threat-found-on-android-mobile-devices-in-germany",
+        "removal": "delete"
+    },
+    {
+        "id": "com.wagd.xiaoan",
+        "description": "This malware is capable of sending malicious messages via WhatsApp, opening new tabs in the default web browser to game websites, downloading more malicious apps, and possibly other malicious behaviors.\nThe malicious WhatsApp messages are most likely in order to further spread the infection to other mobile devices.\nhttps://www.malwarebytes.com/blog/news/2021/04/pre-installed-auto-installer-threat-found-on-android-mobile-devices-in-germany",
+        "removal": "delete"
+    },
+    {
+        "id": "com.oplus.studycenter",
+        "description": "Study Center is an educational application officially developed by OPPO for children aged 0-12 in China.\nAsk for a lot of permissions. Has a lot of security issues:\nhttps://beta.pithus.org/report/e006d8b22e473e603ceb86c654889e08da460b73d609cd9b17642f49d530239a",
+        "removal": "delete"
+    },
+    {
+        "id": "com.oplus.ovoicemanager.wakeup",
+        "description": "Voice Assistant related. A component for com.oplus.ovoicemanager.\nhttps://www.apkmirror.com/apk/oneplus-ltd/ovoicemanagerskillservice-2/ovoicemanagerskillservice-1-1-13-release/ovoicemanagerskillservice-1-1-13-android-apk-download/",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.partnerbrowsercustomizations.example",
+        "description": "This hidden Chinese/Romanian adware changes Google Chrome's home page, it varies by manufacturers.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sprd.systemupdate",
+        "description": "Another update app by Zhantang, this one seems to provide updates unlike other app com.redstone.ota.ui, which is a dropper. Removing it after your update support ends is probably the safest option.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.example.test",
+        "description": "Bigme HiBreak Pro calendar optimized for e-ink displays.\nCheck that you have this phone before disabling! The package name is generic.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.test.logcollect",
+        "description": "Bigme HiBreak Pro app to submit log reports when user requests it. Uploads Android and kernel logs to a Chinese cloud (Baidu). If uninstalled, Log Report button in the settings will not open a pop-up.\nCheck that you have this phone before disabling! The package name is generic.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sohu.inputmethod.sogou.oem",
+        "description": "Keyboard app used in some Chinese phones. There is a report that this keyboard might have contained security vulnerabilities in the past: https://citizenlab.ca/2024/04/vulnerabilities-across-keyboard-apps-reveal-keystrokes-to-network-eavesdroppers/",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xsyt.faceregister",
+        "description": "Bigme HiBreak Pro app to unlock the phone with your face.\nThis app frequently connected to lp.xl-ads.com in the past, which caused security concerns on Reddit in relation to the BadBox 2.0 botnet and Bigme to issue a firmware upgrade that changes the usage of that domain.\nIf disabled, face unlock won't work and the option to activate it in the settings will crash Bigme's settings app.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.xrz.ai",
+        "description": "Wrapper around ChatGPT used on Bigme HiBreak Pro.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.dictapp",
+        "description": "Dictionary provided on the Bigme HiBreak Pro (XDict). Requires to download the dictionaries manually in the app's settings.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.b300.xrz.web",
+        "description": "App called XRZWebExport on the Bigme HiBreak Pro. Does not show up in the app list when enabled.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.soundrecord",
+        "description": "Voice Recorder app on the Bigme HiBreak Pro.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.voice.text",
+        "description": "Bigme HiBreak Pro app that doesn't show up in the app list. Likely used as voice to text application. Installed as the DaWoYuJi.apk.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.scandoc",
+        "description": "Document scan app on the Bigme HiBreak Pro. Does not show up in the app list.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.video",
+        "description": "Video player of the Bigme HiBreak Pro.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.bookmall",
+        "description": "Chinese book store on the Bigme HiBreak Pro.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.bookself",
+        "description": "App that collects epub files and other documents to read on the Bigme HiBreak Pro.\nCan work together with xReader to act as a libary.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.xreaderV3",
+        "description": "eBook reader app used on the Bigme HiBreak Pro.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.btranslate",
+        "description": "Translator on the Bigme HiBreak Pro.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xrz.ebook",
+        "description": "xReader, used by Bigme HiBreak Pro. In the state of my phone, this app crashes and does not provide useful functionality.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ebook.wifitransferbook",
+        "description": "Allows to transfer files on the Bigme HiBreak Pro via Wi-Fi by exposing a web interface on the local network that you can access from another device on the same network.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.iflytek.speechcloud",
+        "description": "App called OfflineTTs on the Bigme HiBreak Pro. Does not show up in the app list.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sprd",
+        "description": "Unisoc's hidden aging test. Uninstalling it doesn't seem to break anything for Android 10 GO, S21 Plus 2021_EEA.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.spreadtrum.csvt",
+        "description": "potentially riskware, (sends information to another infamously hacked apk com.redstone.ota.ui).\n However it seems to work for handling 3G mobile data(and all broadcasts over 3G)\n It should not be removed if your provider/government works over 3G, any emergency message might fail.\n it is also a SOC, so removing ought to be careful.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.unisoc.keyboxchecker",
+        "description": "Unknown purpose, likely spyware. Can't be pulled with ADB. Uninstalling it doesn't seem to break anything for Android 10 GO, S21 Plus 2021_EEA.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.unisoc.storageclearmanager",
+        "description": "StorageClearManager\nUninstalling it doesn't seem to break anything for Android 10 GO, S21 Plus 2021_EEA.\nhttps://www.virustotal.com/gui/file/478e3ac5a3f7a69b73ae34d58ac246507deb0fdec439f9f5f6c7a2b28d450ae0",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sprd.powersavemodelauncher",
+        "description": "PowerSaveModeLauncher\nUnisoc's default home app/launcher for Ultra saving mode connects to the internet. May oddly appear as disabled to UADng and NetGuard.\nhttps://www.virustotal.com/gui/file/787a4de0bc440c62bde9bf913c6f9ba188307d850e1ee6fb575ad62950cfbdc1",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.samsung.android.opencalendar",
+        "description": "Samsung Subscription Calendars.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.systemui.hidenotch",
+        "description": "Hide notch overlay.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.systemui.hidenotch.withoutcornerround",
+        "description": "Hide notch overlay without corner round.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.android.QRreader",
+        "description": "Samsung QR code reader.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.UsimRegistrationKOR",
+        "description": "USIM Registration.\nThis app is used to register your USIM card in South Korea.\nIt is not needed outside of South Korea.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.android.biometrics.service",
+        "description": "Intelligent Scan for Samsung Galaxy S9(+) and Note 9.\nNOTE: Removing this will break Intelligent Scan.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.overlay.iconrecentsconfig",
+        "description": "A completely useless 0 bytes app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.overlay.wallpaperconfig",
+        "description": "A completely useless 0 bytes app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.settings.overlay.oversea",
+        "description": "A completely useless 0 bytes app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.overlay.gmsagoconfig",
+        "description": "A completely useless 0 bytes app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hancom.office.editor",
+        "description": "Proprietary office suite, primarly targeted towards Korean users. This version, typically preinstalled on old Samsung devices, is no longer maintained",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.app.appupdater",
+        "description": "Discontinued app to update Samsung's proprietary apps.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsgoconfig",
+        "description": "A completely useless 0 bytes app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.blackview.artorial.client",
+        "description": "SmartArt\nProvides AI slop wallpapers, mobile games and news to Blackview devices. Can be disabled via Settings.\nhttps://www.blackview.hk/privacy\nhttps://www.virustotal.com/gui/file-analysis/YTg5NWU0ZTVkNzFiMDk4NjliZjdlNWQ0NjNjNDk5Yjk6MTc2MjAwNTk1OA==",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.weather",
+        "description": "Weather\nBlackview's weather app. Can be disabled via Settings.\nhttps://www.blackview.hk/privacy",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.userfeedback",
+        "description": "User feedback\nRequires agreeing to a Privacy Policy (that allows Blackview to sell your location to data brokers) to send feedback to Blackview. Can be disabled via Settings.\nhttps://www.blackview.hk/privacy\nhttps://www.virustotal.com/gui/file-analysis/NWNjODQ4OWEwZjU5MzkzZTFmN2MxNjkwMzcyZTExNjc6MTc2MjAwNzkxNQ==",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.launcher",
+        "description": "BvLauncher\nBlackview's launcher app.\nDON'T REMOVE IF YOU HAVEN'T INSTALLED ANOTHER LAUNCHER!\nhttps://www.blackview.hk/privacy",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.android.app.scrollcapture",
+        "description": "Samsung's app for taking screenshots.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.sprd.telephony.server",
+        "description": "Unknown purpose, likely spyware. Uninstalling it doesn't seem to break anything for Android 10 GO, S21 Plus 2021_EEA.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.authservice",
+        "description": "Runs in the background on Galaxy S7 and earlier, can't seem to find a purpose for this app. No issues when removing it.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.radiobasedlocation",
+        "description": "Tracks location in the background. Doesn't seem to be needed for anything.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.radiobasedlocation.manager",
+        "description": "Tracks location in the background. Doesn't seem to be needed for anything.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.tzdata.update",
+        "description": "App for updating time zone changes on Samsung devices. Now discontinued and completely useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.videolist",
+        "description": "Video player included on Samsung devices (https://play.google.com/store/apps/details?id=com.samsung.android.videolist). Works fine enough as a basic video player.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.tmowfc.wfccontroller",
+        "description": "Wifi Calling for T-mobile clients only! (tmowfc = t-mobile only wifi calling)\nLets you call or text on Wi-Fi networks with your T-Mobile phone number\nhttps://www.t-mobile.com/support/coverage/wi-fi-calling-from-t-mobile\nVoLTE/IMS is needed for this to work (see com.sec.imsservice)\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.android.app.camera.plb",
+        "description": "Looks like an app to record videos for Facebook. Despite having 'camera' in the name, it is not needed for the camera at all.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.clipvideo",
+        "description": "App to create a video collage.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.easylauncher",
+        "description": "TouchWiz easy home -- gives you large icons and makes things the home screen significantly simpler. Primarly designed for elderly users. Discontinued after the release of Samsung Experience in 2017.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.music",
+        "description": "Samsung's proprietary music app, allows you to play local music or connect your Spotify account (https://play.google.com/store/apps/details?id=com.sec.android.app.music). Safe to uninstall, and there's much better open source alternatives for both local music and Spotify.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.spen.flashannotate",
+        "description": "Take notes on your screen. Unneeded, and can't even be accessed unless you're using a Galaxy Note or S Ultra, despite being preinstalled on all Samsungs.",
+        "removal": "delete"
+    },
+    {
+        "id": "service.odtcfactory.sec.com.odtcfactoryservice",
+        "description": "Purpose of this app is completely unknown, but it eats battery and data and is safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.uncube.launcher3",
+        "description": "Torque Launcher\nDefault launcher for BlueStacks. Has ads.\nDON'T REMOVE IF YOU HAVEN'T INSTALLED ANOTHER LAUNCHER!\nhttps://play.google.com/store/apps/details?id=com.uncube.launcher3&hl=en-US",
+        "removal": "caution"
+    },
+    {
+        "id": "com.htc.blackviewhome",
+        "description": "BV Family\nBlackiew's application for access to their store, website, feedback and other things. Can track like a browser.",
+        "removal": "delete"
+    },
+    {
+        "id": "org.lineageos.waydroidupdater",
+        "description": "Waydroid Updater\nhttps://www.virustotal.com/gui/file/543f8eb038c052c4a00a6f3fdda026f2cec327a435c81f62d8738412c748510b/details",
+        "removal": "caution"
+    },
+    {
+        "id": "com.blackview.surfline",
+        "description": "Surfline\nBackview's Safari ripoff with ads. They didn't even bother to remove Chrome, probably because they knew you won't use it. Can be disabled via Settings.\nhttps://www.blackview.hk/privacy",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.filetrans",
+        "description": "Moving Assistant/Data Migration Assistant\nApp used to transfer data from one device to another.\nWARNING: Uninstalling it breaks the App info Settings page on Android 15, Blackview Tab 60 WiFi.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.blackview.dokegamecenter",
+        "description": "DKGame Center",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.ai.vidgen",
+        "description": "VidGen",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.ai.doki",
+        "description": "Hi Doki",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.ai.imagex",
+        "description": "ImageX",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.ai.soundle",
+        "description": "Soundle",
+        "removal": "delete"
+    },
+    {
+        "id": "bnd.com",
+        "description": "Hardware Check\nWARNING: Uninstalling it breaks the App info Settings page on Android 15, Blackview Tab 60 WiFi. It  has an internet permission and can install other apps in the background, which means it's a backdoor! Please remove its permissions, block its internet access using NetGuard or check if uninstalling it breaks anything related to the Settings app.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.blackview.appsedge",
+        "description": "AppsEdge",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.note",
+        "description": "Notebook",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sprd.runtime",
+        "description": "RuntimeTest",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.gamemode",
+        "description": "Game mode",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.cplog",
+        "description": "cplog",
+        "removal": "delete"
+    },
+    {
+        "id": "com.clock.pt1.keeptesting",
+        "description": "KeepTesting2.9.42\nWARNING: Each boot, the system randomly decides whether to perform checks or not. If a check is attempted while the app is missing, the device won't boot past the OEM's logo until restart. Teseted for Android 15, Blackview Tab 60 WiFi.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.blackview.useguide",
+        "description": "User's Manual",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.easytrans",
+        "description": "EasyShare",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.frozenapp",
+        "description": "Cold Room",
+        "removal": "delete"
+    },
+    {
+        "id": "lineageos.platform",
+        "description": "LineageOS System",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.samsung.android.A12.d01.wallpapermulti",
+        "description": "Default Multiple Wallpaper Resource\nA 0 bytes overlay app for Samsung Galaxy A12, you can tell by its package name. Uninstalling it doesn't break the wallpaper slide show on the lock screen. Can be disabled via Settings.\nhttps://www.virustotal.com/gui/file/c5c5e173ccd3b515ec8684cc1c0d3d625ff57fe97a381b691596747225f2403d/details",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.android.wifi.sbs.resources",
+        "description": "WifiRROverlayAppSBS\nhttps://www.virustotal.com/gui/file/94140aa1e8e581bbdfbec9a31b983672d05cb1fda255e3155e3cb85cb5140bad/details",
+        "removal": "replace"
+    },
+    {
+        "id": "com.blackview.app.cloudfolder",
+        "description": "Rec. Apps\nThis adware provides a widget that allows you to install sponsored apps like Temu. Can be disabled via Settings.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.blackview.searchcenter",
+        "description": "Search Centre\nCan be disabled via Settings.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.crucialsoft.asm",
+        "description": "Doesn't seem to do anything, but has permissions to read and write storage. Safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.crucialsoft.fido.client",
+        "description": "Does absolutely nothing. Despite the package name saying 'Fido', it is unrelated to Fido, it is an LG package. Safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.crucialtec.uaf",
+        "description": "Claims to be related to the fingerprint sensor and has fingerprint permissions. Fingerprint sensor still works fine with it removed, however.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ipsec.service",
+        "description": "Has internet access and does nothing. Possibly for an IPSec service and dependency of the LG VPN? Not really sure.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.ipsec.vpnclient",
+        "description": "LG VPN. Doesn't seem to affect VPN functionality, and LG doesn't run a VPN, afaik.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lge",
+        "description": "Main LG system framework. Do not remove, will bootloop your device.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.lge.autosimlockservice",
+        "description": "Has reboot permissions and can check when SIM state is changed. Possibly used for carrier locking devices? No issues when removed.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lge.cota.blm.sf340_enabler",
+        "description": "I can't find any purpose for this app. Titled 'LG Conference Call Update', 'sf340' is part of the codename for the LG Stylo 3 Plus (full codename is sf340n), likely related to some discontinued LG service designed specifically for the Stylo 3 Plus.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lge.drive.activator",
+        "description": "This app used to give you a free 100GB Google Drive storage for 5 years after buying an LG phone, however, Google no longer does this offer, and the app just gives an error now.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lge.gba.android",
+        "description": "Needed for proper VoLTE functionality on LG devices.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.lge.hiddenmenu",
+        "description": "Hidden testing menu on LG devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lge.hiddenpersomenu",
+        "description": "Used to unlock LG phones remotely, from carriers like Sprint.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.lge.inputdevices",
+        "description": "Completely empty package. Safe to remove",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lge.ipprovider",
+        "description": "Completely empty package. Safe to remove",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lge.ipservice",
+        "description": "Needed for Wi-Fi calling on LG T-Mobile devices.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.lge.shutdownmonitor",
+        "description": "Shows the shut down animation when powering off or rebooting LG devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.lge.sizechangable.musicwidget.widget",
+        "description": "LG Music widget. There are much better music apps available.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lge.themesquare",
+        "description": "Change the theme on LG UX.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.lge.wificall",
+        "description": "Needed for Wi-Fi Calling on LG devices.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.lge.update",
+        "description": "LG Update Center for updating your LG device. LG's OTA server shut down on June 30, 2025, so this app now has no purpose.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.redbend.vdmc",
+        "description": "Required for OTA on older LG and HTC devices. While neither of these companies make phones anymore, uninstalling this package results in \"vDM Client has stopped unexpectly\" and \"com.process.android.acore has stopped\", so best to leave this installed.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.epson.mobilephone.samsungprintservice",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.fixmo.isa",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.fmm.dm",
+        "description": "Samsung's Find My Mobile service for tracking your phone if you lost it. Unsure of the difference(s) between this and com.fmm.ds. Can lead to logcat spam in some cases.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.fmm.ds",
+        "description": "Samsung's Find My Mobile service for tracking your phone if you lost it. Unsure of the difference(s) between this and com.fmm.dm, however this one doesn't logcat spam unlike com.fmm.dm.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.infraware.polarisviewer5",
+        "description": "A dumbed down version of Polaris Office Editor 5 (which is a Microsoft Office like app).",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lifevibes.trimapp",
+        "description": "Video trimmer used by the default Samsung Gallery app on some older Samsung devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.LocalFota",
+        "description": "Required to install OTA updates on older Samsung devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.android.app.headlines",
+        "description": "Flipboard app for Samsung devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.app.shareaccessibilitysettings",
+        "description": "Seems to be like a package for saving your accessibility settings, likely to transfer them to another phone.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.android.intelligenceservice",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.scloud.proxy.calendar",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.scloud.proxy.contacts",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.scloud.proxy.memo",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.scloud.proxy.sbrowser",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.scloud.proxy.snote3",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.scloud.quota",
+        "description": "Literally all this app does is tell you when you're out of storage on your Samsung Cloud. Why this isn't part of the main Samsung Cloud app? I have no idea.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.app.video",
+        "description": "Can't figure out what this package does, but no adverse effects to removing it.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.everglades.video",
+        "description": "Part of the TouchWiz video player.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.pickuptutorial",
+        "description": "A guide to some gestures on Samsung devices, however it doesn't seem to be accessable anywhere. Maybe intended for demo units?",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.allshare.service.controlshare",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.allshare.service.fileshare",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.allshare.service.mediashare",
+        "description": "Share media to your other Samsung devices with Allshare. Allshare is discontinued and no longer present on modern Samsung devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.FileShareClient",
+        "description": "Receive files from Samsung devices with Allshare. Allshare is discontinued and no longer present on modern Samsung devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.FileShareServer",
+        "description": "Send files to Samsung devices with Allshare. Allshare is discontinued and no longer present on modern Samsung devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.filtermanager",
+        "description": "Manage camera filters on your Samsung device.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.android.app.interactivekeyguardtutorial",
+        "description": "A guide on how to unlock your phones screen, however it doesn't seem to be present anywhere on the phone. Maybe intended for demo units?",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.mediasync",
+        "description": "Share music for group play.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.mobileprint",
+        "description": "Samsung print service for supported printers.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.android.app.mv.player",
+        "description": "Share videos to other devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.rakein",
+        "description": "Completely empty package. Useless",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.sbrowsertry",
+        "description": "Samsung Internet browser, there are much better browsers available and Samsung Internet has a really sketchy privacy policy.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.SmartClipService",
+        "description": "Default image editor on older Samsung devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.android.app.videoplayer",
+        "description": "TouchWiz video player.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.android.app.wluc",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.cloudagent",
+        "description": "Part of Dropbox integration on TouchWiz",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.cloudagent.dropboxoobe",
+        "description": "Get a free 50GB Dropbox account with your Samsung device! Would be useful, but Dropbox ended this offer about 10 years ago.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.directshare",
+        "description": "Part of Samsung's SBeam service. SBeam has known security vulnerabilities (https://labs.withsecure.com/advisories/samsung-s5-arbitary-file-retrieval-during-sbeam-transfer), so you should really uninstall this.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.easysettings",
+        "description": "Settings app if you're using the Easy Mode feature on Samsung devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.fotaclient",
+        "description": "OTA for legacy Samsung devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.android.fwupgrade",
+        "description": "Updates AllShare components. Since Samsung AllShare is discontinued, this is now useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.Kies",
+        "description": "Required for connecting your device to Samsung Kies, Samsung's long discontinued iTunes competitor. Everything that can be done with Kies can be done with ADB or Heimdall, so there isn't really a point to keeping this.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.mmapp",
+        "description": "Required for Samsung's proprietary music app to work.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.nearby.mediaserver",
+        "description": "Samsung nearby share, part of AllShare. Discontinued.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.SamsungDrmProvider",
+        "description": "Completely empty package. Useless. Content with DRM still works without this package.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.service.bezel",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.service.cm",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.voltesettings",
+        "description": "Needed for VoLTE to function properly, which is a feature a lot of carriers now require.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sec.android.wfds.printplugin",
+        "description": "Needed for Wi-Fi direct printing on Samsung devices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.android.widget.samsungapps",
+        "description": "Widget for Galaxy Apps, showing app suggestions on your home screen.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.widgetapp.activeapplicationwidget",
+        "description": "Completely empty package. Useless",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.dsm.phone",
+        "description": "Completely empty package. Useless",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.dsm.system",
+        "description": "Part of Samsung's Find my Mobile service, appears this app is so you can ring your phone if you lost it.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.knox.seandroid",
+        "description": "Samsung Knox security features. Can't be disabled or uninstalled without root.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sec.pcw.device",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.providers.settingsearch",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.setdefaultlauncher",
+        "description": "Completely empty package. Useless. You can still change launchers without this package.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.siso.app.generic",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.siso.app.genericprintservice",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.apple.atve.androidtv.appletv",
+        "description": "Apple TV\nFactory-installed Apple TV app. Reverts to factory-version when uninstalled by normal means.\n(Shipped with Philips Android TVs, but may be present on other devices as well.)\nhttps://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.networkstack.tethering.inprocess",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.a20.d01.wallpapermulti",
+        "description": "Seems like a completely useless empty package, but the default lock screen wallpaper slideshow stops working if you uninstall this. Wallpapers can still be set fine, so it's still pretty useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.timezone.data_R",
+        "description": "Causes bootloop on any Samsung Galaxy A50 when removed. \n Rescue Party will be triggered, package manager service will fail to start. \n Device becomes unbootable. Do NOT remove on older Samsung devices.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.sec.android.usermanual",
+        "description": "Opens the device’s built‑in user manual PDF",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.a50.d01.wallpapermulti",
+        "description": "Provides the wallpapers used by the lockscreen multi-pack feature",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.SMT.lang_pt_br_f00",
+        "description": "Voice pack for Samsung TTS in Portuguese (Brazil).",
+        "removal": "replace"
+    },
+    {
+        "id": "com.samsung.SMT.lang_en_us_f00",
+        "description": "Voice pack for Samsung TTS in English (United States).",
+        "removal": "replace"
+    },
+    {
+        "id": "in.gov.uidai.pehchaan",
+        "description": "National ID app based on a unique 12 digit number and biometrics information. Privately mandated by Government of India to be pre-installed on devices.\nSource: https://www.reuters.com/world/china/indias-proposal-preload-national-id-app-aadhaar-phones-faced-pushback-2026-03-19/",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.android.launcher",
+        "description": "Honor launcher app.\nIt's basically the home screen, the way icons apps are organized and displayed.\nDON'T REMOVE THIS IF YOU DIDN'T INSTALL ANOTHER LAUNCHER !\nYou will need this package for the recent apps feature to work, and will completely break the gestural navigation bar.\n",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.calendar",
+        "description": "Honor's calendar app.\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.photos",
+        "description": "Honor's photos app.\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.lens",
+        "description": "App kinda like Google Lens, used for scanning QR Codes and more.\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.appmarket",
+        "description": "HONOR's App store.\nSafe to remove.\nNOTE: Installed apps via this store will no longer auto-update after removal.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.phoneservice",
+        "description": "My Honor.\nhttps://play.google.com/store/apps/details?id=com.hihonor.phoneservice&hl=fr",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.notepad",
+        "description": "Honor's notepad app.\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.filemanager",
+        "description": "Honor's file manager.\nIt is not the system one so it's safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.calculator",
+        "description": "Honor's calculator app.\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.contacts",
+        "description": "Honor's contacts app.\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.videoeditor",
+        "description": "Honor's video editing app.\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.magazine",
+        "description": "Magic Pictorial/Magazine unlock.\nSafe to remove if you're not using it.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.android.thememanager",
+        "description": "Honor's Theme manager.\nDisabling it will prevent you from changing themes.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.search",
+        "description": "HONOR Search.\nhttps://www.honor.com/sa-en/support/content/en-us15829481/\nSafe to remove if you're not using it.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.collectcenter",
+        "description": "HONOR Favourites space.\nSafe to remove if you're not using it.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.soundrecorder",
+        "description": "Honor's audio recording app.\nSafe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.bluetooth",
+        "description": "Contact import via blueooth on Honor devices, probably safe to remove if you don't plan using this function.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.ouc",
+        "description": "OTA Updates for Honor devices. Probably unsafe to remove.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.mmitest",
+        "description": "MMITest\nHidden hardware tests. Safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.android.fmradio",
+        "description": "Honor's stock radio player. Remove if FM isn't relevant for you.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.keychain",
+        "description": "Face recognition and fingerprint authentication. Probably a bad idea to remove.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.hihonor.compass",
+        "description": "Honor's compass app. Safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.imedia.sws",
+        "description": "Audio 3D effects found in the settings. Safe to remove if you don't use these settings.\nCauses an audio glitch after the first reboot following the uninstallation or disabling of this package.\nWhen you start or resume playing any audio content in any media application, the sound volume initially sets to maximum for half a second, then normalizes.\nAffects only external audio devices with any connection type.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.hnasm",
+        "description": "FIDO UAF Authenticator-Specific Module.\nSee 'com.hihonor.fido.uafclient' for FIDO explaination.\nThe UAF Authenticator-Specific Module (ASM) is a software interface on top of UAF authenticators which gives a standardized way for FIDO UAF clients to detect and access the functionality of UAF authenticators and hides internal communication complexity from FIDO UAF Client.\nhttps://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-asm-api-v1.0-ps-20141208.html",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.fido.uafclient",
+        "description": "UAF client for FIDO.\nFido is a set of open technical specifications for mechanisms of authenticating users to online services that do not depend on passwords.\nhttps://fidoalliance.org/specs/u2f-specs-1.0-bt-nfc-id-amendment/fido-glossary.html\nhttps://fidoalliance.org/specs/fido-v2.0-rd-20170927/fido-overview-v2.0-rd-20170927.html\nThe UAF protocol is designed to enable online services to offer passwordless and multi-factor security by allowing users to register their device to the online service and using a local authentication mechanism such as iris or fingerprint recognition.\nhttps://developers.google.com/identity/fido/android/native-apps\nSafe to remove if you don't use password-less authentication to access online services.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.dsdscardmanager",
+        "description": "Dual card management\nIt's sim card management in Honor settings.\nAfter removing, sim card management in settings will not work.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.hihonor.gameassistant",
+        "description": "Honor Game Suite (HiGame).\nMobile game app store.\nhttps://club.hihonor.com/in/topic/16341/detail.htm\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.game.kitserver",
+        "description": "Probably safe to remove if you don't play games.\nHas window show, keybind set and more things.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.powergenie",
+        "description": "Task killer app in EMUI 9+ (Android 9+).\nTask killer apps tend to do more harm than help as they clear cached RAM for no good reason, removing the battery and time savings involved in caching. In addition to the obvious issues with background functionality like notifications.\nFrom issue#104.\nSystem will start lagging a little bit (you will notice it while scrolling and on some animations, for example scrolling installed apps), battery consumption will become slightly higher and battery stats will disappear soon. At the same time, logcat will be full of errors like: PowerKit: PG Server is not found. calling pid xxxx.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.hiviewtunnel",
+        "description": "This displays details/attributes of pictures in the gallery (ISO, exposure time, etc.).\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.hiview",
+        "description": "hiview\nRemoving this doesn't remove access to the picture attributes, so what does it actually do?\nIt's the same as (com.hihonor.hiviewtunnel), which is useless.\nIt has 19 permissions, Crash App Dialog, logs. So do not trust these apps.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.assetsync",
+        "description": "HnAssetSync\nNeeded for HiCloud, Cloud syncing.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.assetsyncservice",
+        "description": "It's for 'com.hihonor.securityserver' for start this service app.\nNeeded for HiCloud sync security.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.securityserver",
+        "description": "HnSecurityServer\nNot needed app without code and useless assets to spying apps.\nNeeded for face unlock, black screen will be shown if you remove this package (?). Doesn't apply to all devices",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.iaware",
+        "description": "App Prioritizer. Prioritizes apps to avoid slowdown\nUp to you but there is apparently no noticeable difference when deleted?\nSystem will start lagging a little bit (you will notice it while scrolling and on some animations, for example scrolling installed apps), battery consumption will become slightly higher and battery stats will disappear soon. At the same time, logcat will be full of errors like: PowerKit: PG Server is not found. calling pid xxxx.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.autoinstallapkfrommcc",
+        "description": "Auto Install apk from mcc\nAuto Install apk from mcc? it's only information and logs.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.omacp",
+        "description": "Provisioning message\nUsed for provisioning APN settings to devices via SMS. I think you shouldnt touch it if you want sms messages.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.motionservice",
+        "description": "Gesture Service\nNot very useful gestures available in settings.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.hndockbar",
+        "description": "Honor Multi-Window dock\nProbably fine to remove if you're not using Honor Multi-Window features.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.pcassistant",
+        "description": "HiSuite service. Used by HiSuite PC software.\nHiSuite enables you to backup your data and restore them from/to your phone.\nhttps://consumer.huawei.com/en/support/hisuite/\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.wifieapsimplmn",
+        "description": "PredefinedEapSim\nNeeded for WiFi to work properly? WiFi may not work (?)",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.android.mirrorshare",
+        "description": "MirrorShare feature (Miracast rebranded by Honor)\nUsed to mirror screen of you smartphone on a TV.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.android.projectmenu",
+        "description": "ProjectMenu\nHidden settings not available for users. ProjectMenu interface: phone *#*#2846579#*#*\nhttps://www.99mediasector.com/open-project-menu-huawei-device-huawei-code/",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.remotepassword",
+        "description": "RemotePassword\nremotepassword: errors, invalid, null, errors generally\nalso subscribe info, device info. Better remove that.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.koBackup",
+        "description": "As of writing this, Honor phones cannot be rooted.\nThis Backup application is probably able to backup more than any other 3rd party backup app.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.iconnect",
+        "description": "iConnect\nHidden menu 'install PCAssistant' when connected to PC? I have never seen it. Safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.linktowindowsservice",
+        "description": "Windows Phone Link Service. Safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.systemserver",
+        "description": "Honor System Services\nIt depends on (com.hihonor.systemmanager).\nNeeded for navigation with a fingerprint reader that is on a Huawei Mate 10, but fingerprint unlock will still work if you remove it.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.android.internal.app",
+        "description": "Component of Honor sharing\nMay break the sharing function in several applications (in particular, apps will crash).",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.synergy",
+        "description": "Honor Cloud & Network Synergy.\nSeems to be related to B2B (Business To Business) cloud stuff.\nhttps://www.huawei.com/en/press-events/news/2016/10/Cloud-Network-Synergy-Whitepaper\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.contacts.sync",
+        "description": "Huawei Contacts sync\nMy guess (can't have the apk on hand) is this enables you to synchronise your contacts with your Huawei account.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.deviceauth",
+        "description": "TrustedDeviceAuth\nI guess it's for authentication keys",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.android.FloatTasks",
+        "description": "Floating/Navigation dock (also called NaviDot).\nhttps://consumer.huawei.com/en/support/how-to/detail-troubleshooting/en-us00310067/",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.android.wfdft",
+        "description": "Wi-Fi Direct feature.\nNote: Wifi direct enables devices to establish a direct Wi-Fi connection (without a router) over which the two can send and receive files.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.browserhomepage",
+        "description": "Honor Browser component.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.searchservice",
+        "description": "Fusion Search Service\nNeeded for searching? \nalso found trackers components that connects to Honor servers unnecessarily.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.assistant",
+        "description": "AI Suggestions\nDidn't find any issues when removing it.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.hnstartupguide",
+        "description": "A one-time setup app that is no longer needed",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.camera",
+        "description": "Safe to remove, but not recommended, as other camera apps are not much better than this one.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.HnMultiScreenShot",
+        "description": "Scrolling screenshot feature\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.smartshot",
+        "description": "Smart screenshots\nNeeded for screenshots.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.screenrecorder",
+        "description": "Stock screen recorder\nUseful only in pre-Android Pie for having system audio recording without root.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.permissioncontroller.overlay",
+        "description": "Found help app permissions - only link to Google site in code, overlay to permission things like buttons, dialogs, etc.\nBut it's not needed?",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.ddmp",
+        "description": "DDMP\nHas a lot frameworks.\nUninstalling breaks calling app even if you disable.\nIt does not cause bootloop but removing is highly not recommended.\nNot only breaks the dialer app, but causes lag in whole system too.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.hihonor.detectrepair",
+        "description": "Honor Smart diagnosis (discontinued?)\nUseless features and run in background.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.android.hnaps",
+        "description": "HnAps\nManages Intelligent Resolution and changing screen resolution in settings.\nIntelligent Resolution will be not available and changing screen resolution in settings.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.hihonor.behaviorauth",
+        "description": "BehaviorAuth\nIt seems to be related to verifying the authenticity of user behavior and enhancing password security. User can disable it so it's safe to remove.\nhttps://www.android-hilfe.de/forum/huawei-p30-p30-pro-p30-lite.3510/was-ist-die-behaviorauth-app-fuer-das-p30.1008750.html",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.android.chr",
+        "description": "HnChrService\nHonor Call History Record.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.coauthservice",
+        "description": "HnCoAuthService\nApplock, lockscreen password, face recognition things, fingerprint, not sure if it's worth removing it.\nNeeded for manual apk installation.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.nearby",
+        "description": "HnNearby\nNeeded for Honor Share features. (com.hihonor.android.instantshare)\nHonor Share features may not work after remove.\nNeeded to show a preview of recently opened apps in task manager. I agree, makes no sense, but that's what it is.",
+        "dependencies": [
+            "com.hihonor.android.instantshare"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.hnpanpayservice",
+        "description": "Payment related service. Safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.securitypluginbase",
+        "description": "HnSecurityPluginBase\nAntivirus Service supports bad antiviruses, HnLog, not needed",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.android.hnupgradeguide",
+        "description": "hnupgradeguide\nit's guide menu at first start Honor App Market.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.android.instantshare",
+        "description": "Honor Share features.\nFile transfer tool between Honor mobiles, using Bluetooth connection and WiFi Direct technology.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.numberidentity",
+        "description": "Designed to block unwanted calls.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.deskclock",
+        "description": "Honor Clock App.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.systemmanager",
+        "description": "System Manager\nHonor's stock phone cleaner. Consumes a lot of battery power for useless 'security' checks.\n NOTE: breaks the functionality of closing and cleaning background apps.\nThis is more than a phone cleaner, you will lose a lot of settings like battery and notifications management if you remove this.\n WARNING: apparently needed for managing app permissions, not safe to remove.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.hihonor.airlink",
+        "description": "Air link service, it's probably needed for Wireless Projection.\nNo activities, only more debugging stuff, location things, logs",
+        "removal": "replace"
+    },
+    {
+        "id": "androidhnext",
+        "description": "EMUI Graphical User Interface:\nhttps://fixyourandroid.com/about/androidhwext\nThe framework responsible for the themes (even the standard one) of EMUI to launch. Also, it's the core for the Themes app. REMOVING IT CAUSES A BOOTLOOP!",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.hihonor.trustcircle",
+        "description": "Device authentication service\nThe app's usage is unknown, but it can be removed if apps such as com.hihonor.id, com.hihonor.appmarket are also removed. This is what I found while exploring the APK: Huawei Mobile Services?, managing installation and updates of AppGallery.\nHuawei HWID account may be inaccessible without this app.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.id",
+        "description": "Honor Mobile Services\nHonor’s alternative to Google Play Services. Needed to access advanced Honor features.\nA Honor ID is required to access services, like Themes. This may break an app like InPost Mobile, see:\nhttps://github.com/0x192/universal-android-debloater/issues/477\nSee more about Honor Mobile Services: https://www.xda-developers.com/huawei-hms-core-android-alternative-google-play-services-gms/",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.printservice",
+        "description": "Print service",
+        "removal": "replace"
+    },
+    {
+        "id": "com.hihonor.lbs",
+        "description": "Location Based Services\nLocation-based services (LBS) are applications or services that utilize location data from a user's device, such as a smartphone or GPS, to provide relevant information, directions, or recommendations tailored to their specific location. These services rely on a combination of technologies, including Global Positioning System (GPS), Wi-Fi, cellular networks, and sensors, to determine a user's position accurately.\nNOTE: Can cause bootloops on some devices.\nThe primary goal of LBS is to offer personalized and context-aware experiences based on a user's geographical location. This can include services like:\n1. Navigation and Mapping, 2. Location-Based Advertising, 3. Social Networking, 4. Emergency Services, 5. IoT Asset Tracking\nhttps://forum.huawei.com/enterprise/en/location-based-services/thread/703168442200375296-667213855346012160",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.aipluginengine",
+        "description": "Assistant Basic Services\nSeems to be a dependency of Honor Lens. Safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hihonor.systemappsupdater",
+        "description": "System apps update\nUnless you want to manually update system apps, do not remove.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hihonor.awareness",
+        "description": "Dependency of YOYO Assistant and Honor AI ? Didn't notice anything when removed.",
+        "removal": "delete"
     }
 ]

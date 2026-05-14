@@ -1473,5 +1473,35 @@
         "description": "Resources for the system DeviceConfig service that delivers Google-side feature flags / experiment values (Phenotype) to system components.",
         "removal": "caution",
         "warning": "Removing can stall A/B feature rollouts and lock the device on default flag values."
+    },
+    {
+        "id": "com.google.android.apps.pixel.subzero",
+        "description": "Daily Hub - useless a general-purpose news app",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.apps.photosgo",
+        "description": "Google Gallery (https://play.google.com/store/apps/details?id=com.google.android.apps.photosgo)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.apps.speechservices",
+        "description": "Google Speech Services\nAbsolute garbage. There is already another speech recognition app (Speech Recognition and Synthesis from Google), so this app is just spyware, judging by the URLs it connects to.\nhttps://www.virustotal.com/gui/file/9340b2aa1cb6f3fab3481a4bd5c0dacae2441bbb0849691b08a6e8bcedae2662/details",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.apps.gcs",
+        "description": "Internet services for Pixel and Nexus devices, including Wi-Fi/Mobile data switching, enabling a Google VPN on public networks, and Call Casting for Chromebooks. https://play.google.com/store/apps/details?id=com.google.android.apps.gcs",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.apps.genie.geniewidget",
+        "description": "News and weather widget. App was discontinued in 2018 and no longer works, therefore there is no point to have it anymore.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.gm.exchange",
+        "description": "Microsoft Exchange ActiveSync support for Gmail. Now part of the Gmail (com.google.android.gm) app.",
+        "removal": "delete"
     }
 ]

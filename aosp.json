@@ -1724,5 +1724,65 @@
         ],
         "removal": "delete",
         "warning": "Removing only loses the Linux Terminal feature itself. AVF infrastructure is provided by other modules and remains."
+    },
+    {
+        "id": "android.ext.shared",
+        "description": "Android Shared Library, removing may cause a bootloop.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.google.android.wifi.resources.overlay",
+        "description": "A google mainline module overlay for com.android.wifi.resources, which might be useless if gms is removed, as it only provides gms customizations for Wi-Fi, not android system customizations.\n Only safe to remove if you have removed gms.\n There's no such package as com.google.android.wifi.resources, but only com.android.wifi.resources. And there are multiple packages with such names, that cause no damage when removed.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.providers.partnerbrowsercustomizations",
+        "description": "Provides browser customizations from partners (for chrome only). Total bloatware, especialy useless if you use another browser than Chrome.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.uwb.resources.overlay.common",
+        "description": "Overlay for UWB (Ultra-Wideband) resources. Used for device-to-device ranging and location features.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.overlay.setupwizard",
+        "description": "An overlay for com.google.android.setupwizard. Safe to remove if com.google.android.setupwizard has been removed.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.wifi.resources.overlay.common",
+        "description": "An overlay-google addition for `com.android.wifi.resources`, presumably Google bloat.\nA user reported some issues with Hotspot",
+        "removal": "replace"
+    },
+    {
+        "id": "android.ui.overlay.ct",
+        "description": "An overlay that customizes Android UI for the China Telecom operator (3rd largest operator in China).\nSafe to remove if you don't live in china or don't use/plan to use this carrier. Often present on ROMs and devices outside of China.",
+        "removal": "replace"
+    },
+    {
+        "id": "android.aosp.overlay.telephony",
+        "description": "Likely an important overlay for telephony services and com.android.providers.telephony. Not safe to delete.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.providers.settings.overlay",
+        "description": "Required for com.android.providers.settings. Not safe to delete.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.overlay.circletosearch",
+        "description": "An overlay likely deeply tied with system ui, because it causes a soft brick (all system apps suddenly crashing and inability to launch any app or process after that) on HyperOS 2.0.\nWill most likely also bootloop your device. Totally NOT safe to delete.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.google.android.settings.intelligence",
+        "description": "Setting Services. Adds the main search bar for the settings app (the one at the top on the default page).\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.phasebeamorange",
+        "description": "\"Sun Beam\" live wallpaper. Just Phase Beam but orange.",
+        "removal": "delete"
     }
 ]

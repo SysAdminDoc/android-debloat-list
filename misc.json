@@ -3510,5 +3510,170 @@
         ],
         "removal": "replace",
         "suggestions": "backup_apps"
+    },
+    {
+        "id": "com.sar.main",
+        "description": "!!! WARNING !!! DO NOT DELETE THIS PACKAGE, EVEN IF YOU ENABLED REMOVAL OF UNSAFE PACKAGES. THIS PACKAGE WON'T BOOTLOOP YOUR DEVICE, BUT ITS REMOVAL MAKES THE PHONE MORE DANGEROUS BECAUSE OF INCONTROLLABLE RADIO-FREQUENCY ENERGY EMITTING.\nSarReduce Service (Specific Absorption Rate)\nThis package adjusts the level of radio-frequency energy basing on where and what mode the phone is, found on Lenovo devices mostly.\nAbsolutely not safe to remove; Danger for health. The device won't be lowering the emitted radio-frequency energy while close to body. Networks, such as Wi-Fi, Bluetooth and Mobile Data are also very likely to become unstable.\nWARNING: Removing other core/important system services might influence or break the behavior of this package. BE CAREFUL.\nAlso, removing this package might violate the SAR (Specific Absorption Rate) law in EU.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.jiiov.fingerprint_factorytest",
+        "description": "A factory test app for Jiiov fingerprint scanners (Jiiov fingerprint scanners are mostly used on devices such as Xiaomi, Redmi, POCO, etc..). Mostly not needed for daily phone use, might be needed in service centers during repair or when you'll want to test your fingerprint scanner. Not sure how to even access it.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.wifi.resources.overlay.pineapple",
+        "description": "An overlay for com.android.wifi.resources for devices using the “pineapple” Wi‑Fi HAL (Google’s internal codename for a Wi‑Fi module configuration). Not safe to remove, especially on Android 13+.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.wifi.resources.overlay.target.sm8635",
+        "description": "An overlay for com.android.wifi.resources for devices with the Snapdragon 7s Gen 2 CPU (codename SM8635). Not safe to remove.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.block.juggle",
+        "description": "Block Blast. A causal game pre-installed on Xiaomi Poco devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.block.puzzle.game.hippo.mi",
+        "description": "Block Puzzle Guardian. A causal game pre-installed on Xiaomi Poco devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sukhavati.gotoplaying.bubble.BubbleShooter.mint",
+        "description": "Bubble Shooter And Friends. A causal game pre-installed on Xiaomi Poco devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.logame.eliminateintruder3d",
+        "description": "Dust Settle. A causal game pre-installed on Xiaomi Poco devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.jewelsblast.ivygames.Adventure.free",
+        "description": "Jewels Blast. A causal game pre-installed on Xiaomi Poco devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ordinaryjoy.woodblast",
+        "description": "Wood Blast. A causal game pre-installed on Xiaomi Poco devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.mintgames.wordtrip",
+        "description": "Word Scenery Crossword. A causal game pre-installed on Xiaomi Poco devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nf.snake",
+        "description": "Snake Zoneio. A causal game pre-installed on Xiaomi Poco devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.mintgames.triplecrush.tile.fun",
+        "description": "Tile Fun. A causal game pre-installed on Xiaomi Poco devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.mediatek.datachannel.service",
+        "description": "Mediatek's DataChannel Service, manages data channels used by IMS for VoLTE, VoWiFi and RCS.\nThe communication bridge between modem and android telephony framework. Will most likely break RCS, VoLTE and VoWiFi. Not worth deleting.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.qualcomm.qti.uceShimService",
+        "description": "The Qualcomm telephony support service that acts as a shim layer between IMS and qualcomm modem stack.\nWill likely break RCS, VoLTE, VoWiFi and some carrier preference customizations. Not worth deleting.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.datatransfer",
+        "description": "The com.mediatek.datatransfer package is part of MediaTek's suite of utilities and is typically used for managing data transfer between devices or during device setup. This app often supports functions like transferring files, contacts, and other data from one device to another. Removing this package might impair the ability to use MediaTek-specific data transfer tools and could impact some setup or migration processes.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.filemanager",
+        "description": "The com.mediatek.filemanager package is MediaTek’s proprietary file management app, designed to handle file browsing, organization, and management on devices with MediaTek chipsets. While it provides basic file management functions, there are many more advanced and feature-rich file manager apps available on Google Play.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.mediatek.fwk.plugin",
+        "description": "The com.mediatek.fwk.plugin package is part of MediaTek’s framework for managing plugins and extensions specific to MediaTek’s hardware and software ecosystem. This package may handle integration and support for various MediaTek-specific features and enhancements. Removing this package could affect some advanced functionalities or custom features provided by MediaTek, but it generally should not disrupt basic system operations.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.security",
+        "description": "The com.mediatek.security package is part of MediaTek’s security suite, providing features such as malware protection, privacy settings, and secure browsing options. While the package may offer added security features specific to MediaTek devices, there are alternative security solutions available on Google Play that can provide similar or enhanced protection. Removing this package might lead to a loss of MediaTek-specific security features, but it is generally not critical to the basic operation of the device.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.videoplayer",
+        "description": "The com.mediatek.videoplayer package is MediaTek’s default video player app, designed to handle video playback and provide basic media management features. Since there are numerous alternative video player apps available on Google Play that offer advanced features and better performance, removing this package is generally recommended.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.focaltech.fpsensormmitest",
+        "description": "Related to `com.focaltech.fingerprint`. Seems like a debugging activity triggered by dialing an MMI code",
+        "removal": "delete"
+    },
+    {
+        "id": "Info.Plateau.Einkbro",
+        "description": "Open source web browser designed to fit E-ink devices, https://github.com/plateaukao/einkbro",
+        "removal": "replace"
+    },
+    {
+        "id": "com.sencatech.iwawa.iwawahome",
+        "description": "Pre-installed parental control bloatware with ads. (https://play.google.com/store/apps/details?id=com.sencatech.iwawa.iwawahome)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.flipkart.android",
+        "description": "Pre-installed Indian shopping bloatware with ads. (https://play.google.com/store/apps/details?id=com.flipkart.android)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nousguide.android.rbtv",
+        "description": "Red Bull TV\nA 1 star streaming service owned by a company that sells electronic cigars and energy drinks to the youth. Can be uninstalled via Settings.\nhttps://play.google.com/store/apps/details?id=com.nousguide.android.rbtv",
+        "removal": "delete"
+    },
+    {
+        "id": "com.davincikids.tv",
+        "description": "Davinci Media\nA 2 star streaming service.\nhttps://play.google.com/store/apps/details?id=com.davincikids.tv",
+        "removal": "delete"
+    },
+    {
+        "id": "com.tripledot.triple.tile.match.pair.game.three.master.object",
+        "description": "Triple Tile\nPre-installed mobile game with ads and in-app purchases up to 129.99 USD. Can be disabled via Settings.\nhttps://play.google.com/store/apps/details?id=com.tripledot.triple.tile.match.pair.game.three.master.object",
+        "removal": "delete"
+    },
+    {
+        "id": "com.macropinch.swan",
+        "description": "Weather\nhttps://play.google.com/store/apps/details?id=com.macropinch.swan",
+        "removal": "delete"
+    },
+    {
+        "id": "com.taboola.mip",
+        "description": "Intrusive background module (Taboola) that keeps pushing a lock-screen stories feed — spam-ads and irrelevant articles (often from foreign/hostile sources).\nRuns in background, uses data, nags user until it is enabled. No system function — safe to remove.\nhttps://techissuestoday.com/motorola-lock-screen-ads-articles/",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.frameworks.telresources",
+        "description": "Completely empty package. Safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.evernote.promohelper",
+        "description": "Companion for the Evernote app, seems to drain battery.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.hp.android.printservice",
+        "description": "Print to your HP printer using your Android phone. Most reviews on Google Play say it doesn't work very well. https://play.google.com/store/apps/details?id=com.hp.android.printservice",
+        "removal": "delete"
+    },
+    {
+        "id": "com.qualcomm.interfacepermissions",
+        "description": "Completely empty package. Useless.",
+        "removal": "delete"
     }
 ]
