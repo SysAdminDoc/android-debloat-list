@@ -20644,6 +20644,13 @@
         "warning": "Removing can prevent Samsung NFC from initializing correctly."
     },
     {
+        "id": "com.samsung.android.nfc.resources.usa",
+        "label": "Samsung NFC USA Resources",
+        "description": "Region-specific resource overlay providing North American carrier / FCC configuration tables for the Samsung NFC service (frequency tables, antenna tuning, AID routing for Samsung Wallet and Google Wallet on US Galaxy devices).",
+        "removal": "unsafe",
+        "warning": "Required on US-market Samsung devices for Samsung Pay / Google Wallet tap-to-pay and US transit AID routing. Removing can break tap-to-pay or NFC card emulation on US carriers."
+    },
+    {
         "id": "com.samsung.android.offline.languagemodel",
         "label": "Samsung Offline Language Model",
         "description": "On-device language model assets used by Galaxy AI's Live Translate, Interpreter, Note Assist summarisation, and Browsing Assist when run offline.",
@@ -20688,6 +20695,13 @@
         "removal": "delete"
     },
     {
+        "id": "com.samsung.android.service.pentastic",
+        "label": "Samsung Pentastic Service",
+        "description": "Background service for the S Pen 'Pentastic' framework on Galaxy Note / S Ultra / Tab S devices — handles Air Actions, BLE remote, hover gestures, and AOD / screen-off memo entry points for the S Pen.",
+        "removal": "delete",
+        "warning": "Only relevant on devices that ship with an S Pen. Removing on an S-Pen device disables Air Actions (BLE remote), screen-off memo capture, and some hover gestures. Safe to remove on non-S-Pen devices."
+    },
+    {
         "id": "com.samsung.android.settingshelper",
         "label": "Samsung Settings Helper",
         "description": "Internal helper bound by Samsung's Settings UI for migrations and capability detection.",
@@ -20721,6 +20735,13 @@
         "description": "Visual eXtension (VEX) framework service that hosts vision models for Galaxy AI features (object recognition, scene segmentation, image search).",
         "removal": "caution",
         "warning": "Removing disables Galaxy AI visual features that depend on VEX (Object Eraser, Generative Edit, Suggested Edits, Photo Assist)."
+    },
+    {
+        "id": "com.samsung.android.visual.cloudcore",
+        "label": "Samsung Visual Cloud Core",
+        "description": "Cloud-side bridge for Samsung Gallery / Galaxy AI vision features (Object Eraser, Generative Edit, Photo Remaster, Portrait Studio) — uploads selected image regions to Samsung's AI back end when the on-device VEX model cannot satisfy the request.",
+        "removal": "delete",
+        "warning": "Removing forces Galaxy AI photo edits to run fully on device or fail when the model is missing. Some advanced edits (Generative Edit, Photo Remaster) may become unavailable."
     },
     {
         "id": "com.samsung.android.wallpaper.live",
@@ -20798,6 +20819,13 @@
         "warning": "Removing alongside Samsung DRM may slow license acquisition."
     },
     {
+        "id": "com.samsung.gamedriver.sm8450",
+        "label": "Samsung Game Driver (SM8450 / Snapdragon 8 Gen 1)",
+        "description": "Updatable Adreno GPU driver package for the Snapdragon 8 Gen 1 SoC (SoC ID SM8450) shipped on the US/Chinese variants of the Galaxy S22 / S22+ / S22 Ultra and the Fold4 / Flip4. Loaded by Game Booster for supported titles.",
+        "removal": "caution",
+        "warning": "Removing forces games to fall back to the baseline GPU driver in firmware. May affect frame pacing or break titles that opt in to the updatable driver."
+    },
+    {
         "id": "com.samsung.gamedriver.sm8750",
         "label": "Samsung Game Driver (SM8750 / Snapdragon 8 Elite)",
         "description": "Updatable graphics driver package for the Snapdragon 8 Elite for Galaxy (codename 'sun', SoC ID SM8750). Loaded by Game Booster for supported titles.",
@@ -20837,6 +20865,20 @@
         "description": "Samsung Text-to-Speech (SMT) US-English voice resources. Only required if Samsung TTS engine is selected as the system TTS provider.",
         "removal": "delete",
         "warning": "Samsung TTS will be unable to speak US English if removed; the device falls back to Google TTS or another configured engine."
+    },
+    {
+        "id": "com.samsung.SMT.lang_es_mx_f00",
+        "label": "Samsung TTS Spanish (Mexico) Language Pack",
+        "description": "Samsung Text-to-Speech (SMT) Mexican-Spanish voice resources. Only required if Samsung TTS engine is selected as the system TTS provider.",
+        "removal": "delete",
+        "warning": "Samsung TTS will be unable to speak Mexican Spanish if removed; the device falls back to Google TTS or another configured engine."
+    },
+    {
+        "id": "com.samsung.SMT.lang_es_us_l01",
+        "label": "Samsung TTS Spanish (US) Language Pack",
+        "description": "Samsung Text-to-Speech (SMT) US-Spanish voice resources. Only required if Samsung TTS engine is selected as the system TTS provider.",
+        "removal": "delete",
+        "warning": "Samsung TTS will be unable to speak US Spanish if removed; the device falls back to Google TTS or another configured engine."
     },
     {
         "id": "com.samsung.ts43authservice",
