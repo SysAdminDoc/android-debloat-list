@@ -80,7 +80,6 @@
         },
         "required": [
             "id",
-            "label",
             "description",
             "removal"
         ]

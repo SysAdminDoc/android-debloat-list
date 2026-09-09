@@ -1,13 +1,31 @@
 [book]
 authors = ["Muntashir Al-Islam"]
 language = "en"
-multilingual = false
 src = "src"
-title = "Android Debloat List"
+title = "Android Debloat List v0.1.0"
+description = "Look up Android package notes and removal classifications in the SysAdminDoc reference snapshot."
 
 [output.html]
 preferred-dark-theme = "ayu"
+default-theme = "ayu"
 additional-css = ["custom.css"]
-smart-punctuation = true
+smart-punctuation = false
 no-section-label = true
-site-url = "/android-debloat-list/"
+site-url = "./"
+git-repository-url = "https://github.com/SysAdminDoc/android-debloat-list"
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.html.print]
+enable = false
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+expand = true
+heading-split-level = 1
+
+[output.html.search.chapter]
+"categories" = { enable = false }

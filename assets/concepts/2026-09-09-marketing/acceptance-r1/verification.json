@@ -1,0 +1,23 @@
+{
+  "source": "extracted offline reference",
+  "checks": [
+    "Fresh profile opens in the default dark theme",
+    "Search finds the actual Facebook App Manager record offline",
+    "Clicking the search result opens the correct package",
+    "Theme menu changes to light and the choice survives reload",
+    "Case-only ID preserved: com.sec.android.kies",
+    "Case-only ID preserved: com.sec.android.Kies",
+    "Case-only ID preserved: com.qualcomm.qti.uceshimservice",
+    "Case-only ID preserved: com.qualcomm.qti.uceShimService",
+    "Case-only ID preserved: jp.co.omronsoft.mushroom.CommonPhrase",
+    "Case-only ID preserved: jp.co.omronsoft.mushroom.commonphrase",
+    "An empty replacement category is not presented as a recommendation",
+    "Unsafe record has a visible keep-installed warning; App Manager handoff is not executed",
+    "Package footer opens the local reading guide",
+    "The local license/origins page is present and credited",
+    "No HTTP requests or unhandled script errors during offline browsing"
+  ],
+  "networkRequests": [],
+  "errors": [],
+  "noDeviceOrExternalLinkActions": true
+}

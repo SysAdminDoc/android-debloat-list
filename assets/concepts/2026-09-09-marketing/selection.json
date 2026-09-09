@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "identity": "Text-led reference identity; no new app logo",
+  "source": "Verified extracted offline reference",
+  "selected": [
+    {
+      "source": "browser-r3/overview-dark.png",
+      "selected": "assets/screenshots/reference-overview.png",
+      "sha256": "8b24e862e0662035397943716960539f70e7bc34d6138c3c751a50650ad4c693"
+    },
+    {
+      "source": "browser-r3/unsafe-dark.png",
+      "selected": "assets/screenshots/unsafe-package.png",
+      "sha256": "39c2160561dbae9862ab5fbd9f89fbe265bad057ea7e89ff63a00100b7e5648d"
+    }
+  ],
+  "baselineSelected": false,
+  "browserR1Selected": false,
+  "browserR2Selected": false,
+  "preserveAllAttempts": true
+}

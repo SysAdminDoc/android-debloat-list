@@ -2,3 +2,9 @@
 .DS_Store
 build/
 browser/src
+dist/
+__pycache__/
+*.pyc
+CLAUDE.md
+CODEX_CHANGELOG.md
+.claude/

@@ -1,146 +1,65 @@
 <?php
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+require_once __DIR__ . '/reference.php';
 
-
-const REPO_DIR = __DIR__ . "/..";
-const BROWSER_DIR = REPO_DIR . "/browser";
-const SRC_DIR = BROWSER_DIR . "/src";
-const BLOATWARE_DIR = SRC_DIR . "/bloatware";
-const SUMMARY_FILE = SRC_DIR . "/SUMMARY.md";
-const SITEMAP_FILE = SRC_DIR . "/sitemap";
-
-# Create bloatware list
-$bloatware_list = [];
-@mkdir(BLOATWARE_DIR,0777, true);
-foreach (scandir(REPO_DIR) as $filename) {
-    if (!str_ends_with($filename, ".json")) {
-        continue;
-    }
-    $file = REPO_DIR . '/' . $filename;
-    $type = substr($filename, 0, -5);
-    try {
-        $list = json_decode(file_get_contents($file), true, 512, JSON_THROW_ON_ERROR);
-    } catch (JsonException $e) {
-        continue;
-    }
-    foreach ($list as $item) {
-        $id = $item['id'];
-        $name = $item['label'] ?? $id;
-        $bloatware_list[$id] = $name;
-        $content = create_bloatware_item($type, $item);
-        file_put_contents(BLOATWARE_DIR . "/$id.md", $content);
-    }
-}
-asort($bloatware_list);
-
-# Copy readme
-copy(BROWSER_DIR . "/README.md", SRC_DIR . "/README.md");
-
-# Create summary
-$summary = <<<EOF
-# Summary
-
-[Welcome!](README.md)
-
-# Bloatware
-
-EOF;
-foreach ($bloatware_list as $id => $name) {
-    $summary .= "- [". $name ."](bloatware/". $id .".md)\n";
-}
-file_put_contents(SUMMARY_FILE, $summary);
-
-# Create sitemap
-$SITE_NAME = "https://muntashirakon.github.io/android-debloat-list";
-$urls = <<<EOF
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-<loc>{$SITE_NAME}</loc>
-</url>
-EOF;
-foreach ($bloatware_list as $id => $name) {
-    $urls .= <<<EOF
-
-<url>
-<loc>$SITE_NAME/bloatware/{$id}.html</loc>
-<changefreq>weekly</changefreq>
-</url>
-EOF;
-}
-$urls .= <<<EOF
-
-</urlset>
-EOF;
-file_put_contents(SITEMAP_FILE . ".xml", $urls);
-file_put_contents(SITEMAP_FILE, $urls);
-
-exit(0);
-
-// Functions //
-
-function create_bloatware_item(string $type, array $item): string {
-    $id = $item["id"];
-    $name = $item['label'] ?? $id;
-    $description = str_replace("\n", "\n\n", trim($item["description"]));
-    $warning = isset($item['warning']) ? <<<EOF
-<div class="warning">
-{$item['warning']}
-</div>
-EOF : "";
-    $removal = $item['removal'];
-    $removal_name = removal_to_string($item['removal']);
-    $type_tag = type_to_string($type);
-    $web = "";
-    if (isset($item["web"])) {
-        $web = "## References { .refs }\n";
-        foreach ($item["web"] as $num => $link) {
-            $n = $num + 1;
-            $web .= "{$n}. <{$link}>\n";
+function generate_reference(string $root): void {
+    $data = load_reference($root);
+    $paths = package_paths($data['all']);
+    $src = "$root/browser/src";
+    $write = function (string $file, string $content) use ($src): void {
+        $parts = explode('/', $file);
+        $directory = $src;
+        if (is_link($directory)) throw new RuntimeException("Refusing linked output: $directory");
+        if (!is_dir($directory) && !mkdir($directory, 0777, true)) throw new RuntimeException("Cannot create $directory");
+        foreach (array_slice($parts, 0, -1) as $part) {
+            $directory .= "/$part";
+            if (is_link($directory)) throw new RuntimeException("Refusing linked output: $directory");
+            if (!is_dir($directory) && !mkdir($directory)) throw new RuntimeException("Cannot create $directory");
         }
+        if (is_link("$src/$file")) throw new RuntimeException("Refusing linked output: $file");
+        if (file_put_contents("$src/$file", $content) === false) throw new RuntimeException("Cannot write $file");
+    };
+    $version = trim(file_get_contents("$root/VERSION"));
+    if (!preg_match('/^\d+\.\d+\.\d+$/D', $version)) throw new RuntimeException('Invalid VERSION');
+    $overview = file_get_contents("$root/browser/README.md");
+    $overview = str_replace(['{{VERSION}}', '{{PACKAGES}}', '{{SUGGESTION_LISTS}}'], [$version, number_format(count($data['all'])), count($data['suggestions'])], $overview);
+    $write('README.md', $overview);
+    $write('reading-guide.md', file_get_contents("$root/browser/reading-guide.md"));
+    $summary = "# Summary\n\n[Reference overview](README.md)\n\n[How to read an entry](reading-guide.md)\n\n# Packages\n\n";
+    foreach ($data['categories'] as $type => $items) {
+        usort($items, fn($a, $b) => strnatcasecmp($a['label'] ?? $a['id'], $b['label'] ?? $b['id']) ?: strcmp($a['id'], $b['id']));
+        $label = ADL_CATEGORIES[$type];
+        $count = count($items);
+        $summary .= "- [$label ($count)](categories/$type.md)\n";
+        $index = "# $label\n\n$count package records. Search by exact ID to distinguish apps with similar names.\n\n";
+        foreach ($items as $item) {
+            $id = $item['id'];
+            $page = $paths[$id];
+            $name = markdown_label($item['label'] ?? $id);
+            $summary .= "  - [$name](bloatware/$page.md)\n";
+            $index .= "- [$name](../bloatware/$page.md) <code>" . html($id) . "</code>\n";
+            $write("bloatware/$page.md", render_package($type, $item, $data['all'], $paths));
+        }
+        $write("categories/$type.md", $index);
     }
-
-    return <<<EOF
-# {$name}
-
-`{$id}`
-
-<div class="tags">
-<ul>
-  <li data-tag={$type}>{$type_tag}</li>
-  <li data-tag={$removal}>{$removal_name}</li>
-</ul>
-</div>
-
-{$warning}
-
-{$description}
-
-{$web}
-
-<a href="app-manager://details?id={$id}">Open in App Manager</a>
-EOF;
+    $summary .= "\n# Replacement notes\n\n- [Replacement categories](suggestions/index.md)\n";
+    $suggestionIndex = "# Replacement categories\n\nHistorical alternatives from 47 categories. Twelve lists are empty. Read each entry's limitations and check current availability before installing an app.\n\n";
+    foreach ($data['suggestions'] as $name => $items) {
+        $title = ucwords(str_replace('_', ' ', $name));
+        $summary .= "  - [$title](suggestions/$name.md)\n";
+        $suggestionIndex .= "- [$title]($name.md): " . count($items) . " recorded alternatives\n";
+        $write("suggestions/$name.md", render_suggestions($name, $items));
+    }
+    $write('suggestions/index.md', $suggestionIndex);
+    $summary .= "\n# About\n\n- [License and origins](license.md)\n";
+    $write('license.md', "# License and origins\n\nThis is the SysAdminDoc fork of [Android Debloat List](https://github.com/MuntashirAkon/android-debloat-list) by Muntashir Al-Islam and contributors. It incorporates UAD-NG-derived records. The fork is not automatically synchronized with upstream.\n\nCopyright (C) 2022 Muntashir Al-Islam. Licensed under AGPL-3.0-or-later. The complete license and corresponding source are included in the download.\n\n[Read the full license](../LICENSE)\n\nThe reference renderer is [mdBook](https://github.com/rust-lang/mdBook). Its bundled notices are included in THIRD-PARTY-NOTICES.txt at the download root.\n");
+    $write('SUMMARY.md', $summary);
+    echo count($data['all']) . " package pages and " . count($data['suggestions']) . " suggestion pages generated.\n";
 }
 
-
-function type_to_string(string $type): string {
-    switch ($type) {
-        case "aosp": return '<i class="fa fa-android"></i> AOSP';
-        case "carrier": return '<i class="fa fa-signal"></i> Carrier';
-        case "google": return '<i class="fa fa-google"></i> Google';
-        case "misc": return "Others";
-        case "oem": return '<i class="fa fa-microchip"></i> OEM';
-        case "pending": return "Pending";
-        default: throw new Exception("Invalid type: $type");
-    }
-}
-
-
-function removal_to_string(string $removal_name): string {
-    switch ($removal_name) {
-        case "delete": return "Safe to delete";
-        case "replace": return "Replace with alternative";
-        case "caution": return "Exercise caution";
-        case "unsafe": return "Unsafe";
-        default: throw new Exception("Invaid removal: $removal_name");
-    }
+try {
+    generate_reference(dirname(__DIR__));
+} catch (Throwable $error) {
+    fwrite(STDERR, $error->getMessage() . "\n");
+    exit(1);
 }

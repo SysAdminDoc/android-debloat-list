@@ -1,0 +1,193 @@
+{
+  "attempt": "baseline",
+  "source": "local build",
+  "screenshots": [
+    {
+      "name": "overview-dark",
+      "path": "index.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "7696de0b9388bdb22228284c47b2ae71a327a56e039cd67fab9ed314f4a4027b",
+      "title": "Welcome! - Android Debloat List",
+      "heading": "Welcome!",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "Welcome!\n\nThis website acts as a front-end for the Android Debloat List (ADL) project and is intended to serve as an always available wiki for the pre-installed applications on Android, commonly known as “bloatware”. You can utilize the search button or the sidebar to navigate through the bloatware (requires JavaScript), or you can just append /bloatware/<package-name>.html to the homepage URL to navigate to the desired bloatware if available. Each page also has an “Open in App Manager” link that you can follow to view the app info of the selected app (if installed).\n\nAlternative Front-ends\n\nHere’s a list of alternative front-ends that make use of the ADL project:\n\nApp Manager",
+      "anchors": [
+        {
+          "text": "Welcome!",
+          "href": "#welcome"
+        },
+        {
+          "text": "Android Debloat List",
+          "href": "https://github.com/MuntashirAkon/android-debloat-list"
+        },
+        {
+          "text": "Alternative  Front-ends",
+          "href": "#alternative--front-ends"
+        },
+        {
+          "text": "App Manager",
+          "href": "https://github.com/MuntashirAkon/AppManager"
+        }
+      ]
+    },
+    {
+      "name": "package-dark",
+      "path": "bloatware/com.facebook.appmanager.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "2ae38baad5eaa4e433367eb9b0b0655f87d5647cfd55068b10db4a03690106cc",
+      "title": "Facebook App Manager - Android Debloat List",
+      "heading": "Facebook App Manager",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "Facebook App Manager\n\ncom.facebook.appmanager\n\nOthers\nSafe to delete\n\nHandles Facebook apps updates.\n\nOpen in App Manager",
+      "anchors": [
+        {
+          "text": "Facebook App Manager",
+          "href": "#facebook-app-manager"
+        },
+        {
+          "text": "Open in App Manager",
+          "href": "app-manager://details?id=com.facebook.appmanager"
+        }
+      ]
+    },
+    {
+      "name": "unsafe-dark",
+      "path": "bloatware/com.android.systemui.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "8d032d98db6e6618e1eb01f8f7bb8b73bf725c69c9fc351fd22ca49d7c1e78a4",
+      "title": "com.android.systemui - Android Debloat List",
+      "heading": "com.android.systemui",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "com.android.systemui\n\ncom.android.systemui\n\nAOSP\nUnsafe\n\nEverything you see in Android that’s not an app. User interface of Android\n\nOpen in App Manager",
+      "anchors": [
+        {
+          "text": "com.android.systemui",
+          "href": "#comandroidsystemui"
+        },
+        {
+          "text": "Open in App Manager",
+          "href": "app-manager://details?id=com.android.systemui"
+        }
+      ]
+    },
+    {
+      "name": "overview-light",
+      "path": "index.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "light",
+      "sha256": "b16d9a507c1792d776d194f720d40b7403ad06dd85e177954bb4a7c6a60b13a2",
+      "title": "Welcome! - Android Debloat List",
+      "heading": "Welcome!",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "Welcome!\n\nThis website acts as a front-end for the Android Debloat List (ADL) project and is intended to serve as an always available wiki for the pre-installed applications on Android, commonly known as “bloatware”. You can utilize the search button or the sidebar to navigate through the bloatware (requires JavaScript), or you can just append /bloatware/<package-name>.html to the homepage URL to navigate to the desired bloatware if available. Each page also has an “Open in App Manager” link that you can follow to view the app info of the selected app (if installed).\n\nAlternative Front-ends\n\nHere’s a list of alternative front-ends that make use of the ADL project:\n\nApp Manager",
+      "anchors": [
+        {
+          "text": "Welcome!",
+          "href": "#welcome"
+        },
+        {
+          "text": "Android Debloat List",
+          "href": "https://github.com/MuntashirAkon/android-debloat-list"
+        },
+        {
+          "text": "Alternative  Front-ends",
+          "href": "#alternative--front-ends"
+        },
+        {
+          "text": "App Manager",
+          "href": "https://github.com/MuntashirAkon/AppManager"
+        }
+      ]
+    },
+    {
+      "name": "package-light",
+      "path": "bloatware/com.facebook.appmanager.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "light",
+      "sha256": "2c833a9935b96cdf9b0d9796fecfd897746c3d4746f24ea93f865e2415eccee0",
+      "title": "Facebook App Manager - Android Debloat List",
+      "heading": "Facebook App Manager",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "Facebook App Manager\n\ncom.facebook.appmanager\n\nOthers\nSafe to delete\n\nHandles Facebook apps updates.\n\nOpen in App Manager",
+      "anchors": [
+        {
+          "text": "Facebook App Manager",
+          "href": "#facebook-app-manager"
+        },
+        {
+          "text": "Open in App Manager",
+          "href": "app-manager://details?id=com.facebook.appmanager"
+        }
+      ]
+    },
+    {
+      "name": "overview-mobile",
+      "path": "index.html",
+      "width": 390,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "cf6cd1290dda056a7c450227febcee81914fd6dc11df82428b390095ffba22a0",
+      "title": "Welcome! - Android Debloat List",
+      "heading": "Welcome!",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "Welcome!\n\nThis website acts as a front-end for the Android Debloat List (ADL) project and is intended to serve as an always available wiki for the pre-installed applications on Android, commonly known as “bloatware”. You can utilize the search button or the sidebar to navigate through the bloatware (requires JavaScript), or you can just append /bloatware/<package-name>.html to the homepage URL to navigate to the desired bloatware if available. Each page also has an “Open in App Manager” link that you can follow to view the app info of the selected app (if installed).\n\nAlternative Front-ends\n\nHere’s a list of alternative front-ends that make use of the ADL project:\n\nApp Manager",
+      "anchors": [
+        {
+          "text": "Welcome!",
+          "href": "#welcome"
+        },
+        {
+          "text": "Android Debloat List",
+          "href": "https://github.com/MuntashirAkon/android-debloat-list"
+        },
+        {
+          "text": "Alternative  Front-ends",
+          "href": "#alternative--front-ends"
+        },
+        {
+          "text": "App Manager",
+          "href": "https://github.com/MuntashirAkon/AppManager"
+        }
+      ]
+    },
+    {
+      "name": "package-mobile",
+      "path": "bloatware/com.android.systemui.html",
+      "width": 390,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "b72fce9f6adb7131890595a0bea41a86769566c857bacd8cc89fa9463e139843",
+      "title": "com.android.systemui - Android Debloat List",
+      "heading": "com.android.systemui",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "com.android.systemui\n\ncom.android.systemui\n\nAOSP\nUnsafe\n\nEverything you see in Android that’s not an app. User interface of Android\n\nOpen in App Manager",
+      "anchors": [
+        {
+          "text": "com.android.systemui",
+          "href": "#comandroidsystemui"
+        },
+        {
+          "text": "Open in App Manager",
+          "href": "app-manager://details?id=com.android.systemui"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "networkRequests": []
+}

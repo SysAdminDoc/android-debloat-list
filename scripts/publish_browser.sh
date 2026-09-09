@@ -1,15 +1,9 @@
 #!/usr/bin/env sh
-
-# Generate MD files
+# SPDX-License-Identifier: AGPL-3.0-or-later
+set -eu
+cd "$(dirname "$0")/.."
+php scripts/lint.php
+php scripts/test.php
 php scripts/browser_generator.php
-
-# Build website
-cd browser
-mdbook build
-
-# Publish
-cd book
-git init
-git add .
-git commit
-git push -f git@github.com:MuntashirAkon/android-debloat-list.git master:site
+mdbook build browser
+printf '%s\n' 'Reference built in browser/book. Nothing was published or pushed.'

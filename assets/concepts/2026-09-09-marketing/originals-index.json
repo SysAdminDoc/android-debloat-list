@@ -1,0 +1,360 @@
+{
+  "baseline": "3035d9ca1336fb014b67ca0688e8ddd7591fc963",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/report_vulnerability.yml",
+      "bytes": 1419,
+      "sha256": "c9a73a6a6c57e297f6791bab3285b1bedb29ea632d2f5972e1b4e2e2c6c4db4f"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/request_addition.yml",
+      "bytes": 2284,
+      "sha256": "11299b7cd550eb9865c346ef9de8588a33d108ab7d71a1af296c1d7e004151cf"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/request_change.yml",
+      "bytes": 1871,
+      "sha256": "2b66767f154c7738089c81776300d8f5890595b41a06e52364c572de11567fda"
+    },
+    {
+      "path": ".github/workflows/lint.yml",
+      "bytes": 558,
+      "sha256": "ed57d0d7d8102d631f9995b32547797cca589fb099e3f53ca091e2709aa7fd56"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 36,
+      "sha256": "040b670f8e53bfba95084b965de6742529b63f63af74bac29e487e0af4312bf7"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 2565,
+      "sha256": "e9f1228ab68e0f4a9efde2c52a0cc34b57b93ce1c925b440d2eb93f090b49373"
+    },
+    {
+      "path": "COPYING",
+      "bytes": 34522,
+      "sha256": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4740,
+      "sha256": "947f650443374f758019da3c409c64ced01006c8dbf89e59cd40a2da8c00d1d5"
+    },
+    {
+      "path": "aosp.json",
+      "bytes": 91755,
+      "sha256": "e63b625de25618ed836ccbac8cb5eca09a9024e1cd7249e496bf7f34225d2719"
+    },
+    {
+      "path": "browser/.gitignore",
+      "bytes": 5,
+      "sha256": "3c4dbff9eeda9410a0b9eb423472981db8997d666388b4cd2424700c3974d64b"
+    },
+    {
+      "path": "browser/README.md",
+      "bytes": 800,
+      "sha256": "521082e8b89a93a136b701b102c995647d0de590e9120c3b649ed4db12e5c958"
+    },
+    {
+      "path": "browser/book.toml",
+      "bytes": 281,
+      "sha256": "4c806b85241e4366e8c9cc3dc85a3b7c7a055a05575a70249b010f6af87e1a0c"
+    },
+    {
+      "path": "browser/custom.css",
+      "bytes": 476,
+      "sha256": "8566df9a48bbdc9a27945c0b37b9a0d9ea6e1767f874ab011e9ae6c00c83f6c7"
+    },
+    {
+      "path": "carrier.json",
+      "bytes": 78230,
+      "sha256": "9fae9a6724bdf02275a199b84fe0866fb7c1fca34efbe488cb74816deb85c7ae"
+    },
+    {
+      "path": "google.json",
+      "bytes": 68959,
+      "sha256": "85100f08fb1c9e2e73b40d1643795d9a8e62a497d016c0d73810400b1f4613dc"
+    },
+    {
+      "path": "misc.json",
+      "bytes": 168447,
+      "sha256": "a2c2974e9269da799227c90124b76e607a77144b37a17433a53ff2943dc3ac9b"
+    },
+    {
+      "path": "oem.json",
+      "bytes": 1023712,
+      "sha256": "ab20be454b9e24d4b1efe915ede303d7198133a48399487f4f83e2f11a8a5497"
+    },
+    {
+      "path": "schema/bloatware_list.json",
+      "bytes": 2916,
+      "sha256": "fdd96f45e7bb917b2ced5d5ff39050e21e979fd0fe9c8aeb4ba304569cb5e529"
+    },
+    {
+      "path": "schema/suggestion_list.json",
+      "bytes": 1164,
+      "sha256": "191bf6f84b25c6479334294119453956251ffbbd594162405b5cf610394366b1"
+    },
+    {
+      "path": "scripts/browser_generator.php",
+      "bytes": 3800,
+      "sha256": "f31f0545de30719f16f510ffe5ce72d8074624df0cd56c438c87a1ed2e951734"
+    },
+    {
+      "path": "scripts/lint.php",
+      "bytes": 9985,
+      "sha256": "254b8e06362222277ed8cd3f192c543c233fbbe3ca8eb4747384acf6e2339ee0"
+    },
+    {
+      "path": "scripts/publish_browser.sh",
+      "bytes": 241,
+      "sha256": "d659bbe96b251ebfb9bf58f0d0f41268b7064fcc8e64867e294b2bbd82377b26"
+    },
+    {
+      "path": "scripts/test.php",
+      "bytes": 479,
+      "sha256": "385c0f10f5d5ba3625ab76e08f7d393552e93f34c241e2bbb9c7f04ae1cc616b"
+    },
+    {
+      "path": "scripts/update_uad.php",
+      "bytes": 6096,
+      "sha256": "0e8a72dee34bd43d264af4074c8566c1db8f4122d9029575ad8a849b697022f4"
+    },
+    {
+      "path": "suggestions/app_stores.json",
+      "bytes": 454,
+      "sha256": "93c7d3e99458865356ee4826c83da7572cfbcb39e0f9575c0323c1bcb167f5af"
+    },
+    {
+      "path": "suggestions/audio_recorders.json",
+      "bytes": 179,
+      "sha256": "378b9046ae7956f3c00cfd66ef8c5d3902de2db73ac7be2b2db9ca3daf05a058"
+    },
+    {
+      "path": "suggestions/authenticators.json",
+      "bytes": 168,
+      "sha256": "1befa911099ed0df3dada4052afb85a3681843a2f108fd8f35e9a4f31ebfa136"
+    },
+    {
+      "path": "suggestions/automation_apps.json",
+      "bytes": 165,
+      "sha256": "6896202624d622d61496b77efcd1ec10495fd7d8ec6f9c3828ed33c717a6a8cf"
+    },
+    {
+      "path": "suggestions/backup_apps.json",
+      "bytes": 174,
+      "sha256": "fbd6d91ae59f12360d7f32487d0c3206576a4eb894afee9eaae152d87c8169f4"
+    },
+    {
+      "path": "suggestions/barcode_scanners.json",
+      "bytes": 181,
+      "sha256": "25563edebe5f5e7afcaaf08c8dbe0eabb791cf03fd137acaf1b4306ddad42df2"
+    },
+    {
+      "path": "suggestions/battery_managers.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/browsers.json",
+      "bytes": 326,
+      "sha256": "3bc532185d03b2c3e23142c226a45e559eca8062476589a7ce4f45c29a08044b"
+    },
+    {
+      "path": "suggestions/calculators.json",
+      "bytes": 186,
+      "sha256": "b0816e2076daee66d673dafcf851a08429a05913bb89e2caf1e229664fbd5dda"
+    },
+    {
+      "path": "suggestions/calendars.json",
+      "bytes": 157,
+      "sha256": "4c0c3f0d64530b9de30280bb95467d16a35057828e7add2f90212d40c593ae9c"
+    },
+    {
+      "path": "suggestions/call_recorders.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/cameras.json",
+      "bytes": 361,
+      "sha256": "8ec55ad2f9aade142c76ab4f588f867a49af4782599d79bbaa90c650b4699c0d"
+    },
+    {
+      "path": "suggestions/cleaners.json",
+      "bytes": 161,
+      "sha256": "96b5a52f353dce1c21443a395604cf407a2c6dc18e72ce9846d2ce6879ac7fb9"
+    },
+    {
+      "path": "suggestions/clocks.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/cloud_services.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/contacts.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/dialers.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/dictionaries.json",
+      "bytes": 331,
+      "sha256": "83b77b746cefaeabef1eab0a9b37dc51297bfa43baf6e239c0e68a52f1c1133d"
+    },
+    {
+      "path": "suggestions/ebook_readers.json",
+      "bytes": 387,
+      "sha256": "f4644a7688fa855acca4235b450137d6eb3025a3d0050ecc09763fe2502db473"
+    },
+    {
+      "path": "suggestions/email_clients.json",
+      "bytes": 304,
+      "sha256": "0e4be71b709f09c3a75283cab60ac00aab9e776da4b1c2ba3433e477f647723c"
+    },
+    {
+      "path": "suggestions/file_managers.json",
+      "bytes": 178,
+      "sha256": "a51635d13d282fe8c84798a7c28bd8eebae90801203da1ff2dd67feba5a6d85c"
+    },
+    {
+      "path": "suggestions/fitness_trackers.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/gallery.json",
+      "bytes": 332,
+      "sha256": "e5e88dc5b5131b3b36502feb71688220d0f6b117f5ba291aed8e07484f547fdf"
+    },
+    {
+      "path": "suggestions/instant_messaging_apps.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/keyboards.json",
+      "bytes": 425,
+      "sha256": "e600912ec6ef4e975446e66f9b4f2922218597aac1aaeac4629d3ee354f6c1f2"
+    },
+    {
+      "path": "suggestions/launchers.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/locators.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/maps.json",
+      "bytes": 167,
+      "sha256": "298a489ca303ed48552e14cbc76849356a82d0ff71a132c17e2b57d4df3779ee"
+    },
+    {
+      "path": "suggestions/meeting_apps.json",
+      "bytes": 157,
+      "sha256": "da7a08ba8440314d832af55b4e17f9e5bbf39cf43fb0b275034e2367b4daf215"
+    },
+    {
+      "path": "suggestions/music_apps.json",
+      "bytes": 490,
+      "sha256": "628fc7327e6cb04b5801382a2d9726086ebddcf0ef571373c9712cb445a12b95"
+    },
+    {
+      "path": "suggestions/note_taking_apps.json",
+      "bytes": 440,
+      "sha256": "e3e5e2fe5f4743aef6273155314f1554261bd4bd419ee5c81e4a725fc0173330"
+    },
+    {
+      "path": "suggestions/password_managers.json",
+      "bytes": 382,
+      "sha256": "214063b1054ae0a69ffbf13377b5ff57f445bdb859a86914159862ac871a9c7b"
+    },
+    {
+      "path": "suggestions/podcasts.json",
+      "bytes": 168,
+      "sha256": "f2650fbdd4734a56992cb1a3688feaed41bb9b2d0a08c49103510dcbce458150"
+    },
+    {
+      "path": "suggestions/radios.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "suggestions/rss_readers.json",
+      "bytes": 166,
+      "sha256": "9ce3ae818db0307818e0c43aace8691f2a15a113b8c25bd1668615b36ba4b861"
+    },
+    {
+      "path": "suggestions/sandboxing_apps.json",
+      "bytes": 171,
+      "sha256": "2cf06c9c91c9559437b149e98cff58b3d1e0cd31ecacbdcdf1118561231d591b"
+    },
+    {
+      "path": "suggestions/screen_recorders.json",
+      "bytes": 136,
+      "sha256": "bb513c7afcc8aa083c5b2c9e196668b5a9a3f787b52c18707978df73beedc6c6"
+    },
+    {
+      "path": "suggestions/sharing_apps.json",
+      "bytes": 232,
+      "sha256": "8d7a1de7dc497ac4f86013733377b26d25a347b4fc2d986463adca18a4242388"
+    },
+    {
+      "path": "suggestions/sms.json",
+      "bytes": 160,
+      "sha256": "cd2231ed185cf623fe55b62438845fdd10ff770d6f13bd164196c91d126c3ced"
+    },
+    {
+      "path": "suggestions/streaming_apps.json",
+      "bytes": 488,
+      "sha256": "97889eed2e2fbcb1b15df42ccfd433f0baa8850c196063a904b37770add6e4fc"
+    },
+    {
+      "path": "suggestions/task_managers.json",
+      "bytes": 142,
+      "sha256": "4239e4f97b1d3365fe87b968e4063a895b84275843a5e1c07ec8a1d2dfff739d"
+    },
+    {
+      "path": "suggestions/translators.json",
+      "bytes": 166,
+      "sha256": "940885f1044037b10082a235e99e9461b698c95edf10f872e63c854ad7b112a4"
+    },
+    {
+      "path": "suggestions/tts.json",
+      "bytes": 519,
+      "sha256": "2b7e56f4b346358fda75649f7ac13c1f1f960fb41bb36e3a9c31f125ab4e011b"
+    },
+    {
+      "path": "suggestions/video_players.json",
+      "bytes": 163,
+      "sha256": "800b9c1f09496f39810f98111f7b14a6769e66786a47d27b1984f7d237ad012a"
+    },
+    {
+      "path": "suggestions/vpn_services.json",
+      "bytes": 232,
+      "sha256": "69bed918ff3e0ea9f99d58080c6443a71ba9a12d9e601a787a4f624290f6a10f"
+    },
+    {
+      "path": "suggestions/weather_apps.json",
+      "bytes": 153,
+      "sha256": "3750ec33f05de5ae1d00731ca9e0de6780209ab0a415bf5460fc1eaf0bcc0bd7"
+    },
+    {
+      "path": "suggestions/webviews.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ]
+}

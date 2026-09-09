@@ -1,0 +1,321 @@
+{
+  "attempt": "browser-r1",
+  "source": "local build",
+  "screenshots": [
+    {
+      "name": "overview-dark",
+      "path": "index.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "e1fede7b805686cb6102103f5f2d60d7c9187dc08a9918c30e16117f25a68864",
+      "title": "Reference overview - Android Debloat List v0.1.0",
+      "heading": "Look up a package before you change it.",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "ANDROID DEBLOAT LIST V0.1.0 · SYSADMINDOC FORK\n\nLook up a package before you change it.\n\nRead the recorded purpose and removal classification for an Android package. Start with the exact package ID, then check the notes against your device.\n\n5,481\npackage records across five lists\n47\nreplacement categories, some still empty\n\nThis is an offline reference, not a debloating app. It can't inspect your phone or remove anything.\n\nFind an entry\n\nUse the search button at the top of the page. Try com.facebook.appmanager or com.android.systemui. Choose a result by its package ID, since several apps share the same label.\n\nBrowse AOSP, Carrier, Google, Other packages or Device makers in the sidebar.\n\nA classification isn't a safety guarantee.\n\nDevice builds differ. Missing notes or dependencies don't mean removal is safe. Read the warning and keep a recovery plan before changing a device.\n\nKnow which snapshot you're reading\n\nThe package data was last changed in this fork on 2026-05-14. v0.1.0 updates the reference presentation and packaging, not the underlying recommendations.\n\nThe SysAdminDoc fork includes records from Muntashir Al-Islam's Android Debloat List and UAD-NG. It isn't automatically synchronized with either project.\n\nHow to read an entry explains the classification values and missing information. License and origins covers attribution.",
+      "anchors": [
+        {
+          "text": "Look up a package before you change it.",
+          "href": "#look-up-a-package-before-you-change-it"
+        },
+        {
+          "text": "Find an entry",
+          "href": "#find-an-entry"
+        },
+        {
+          "text": "AOSP",
+          "href": "categories/aosp.html"
+        },
+        {
+          "text": "Carrier",
+          "href": "categories/carrier.html"
+        },
+        {
+          "text": "Google",
+          "href": "categories/google.html"
+        },
+        {
+          "text": "Other packages",
+          "href": "categories/misc.html"
+        },
+        {
+          "text": "Device makers",
+          "href": "categories/oem.html"
+        },
+        {
+          "text": "Know which snapshot you're reading",
+          "href": "#know-which-snapshot-youre-reading"
+        },
+        {
+          "text": "SysAdminDoc fork",
+          "href": "https://github.com/SysAdminDoc/android-debloat-list"
+        },
+        {
+          "text": "Muntashir Al-Islam's Android Debloat List",
+          "href": "https://github.com/MuntashirAkon/android-debloat-list"
+        },
+        {
+          "text": "How to read an entry",
+          "href": "reading-guide.html"
+        },
+        {
+          "text": "License and origins",
+          "href": "license.html"
+        }
+      ]
+    },
+    {
+      "name": "package-dark",
+      "path": "bloatware/com.facebook.appmanager.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "6ff7368701a1043cbed31dd072147638d5fda82400a0a05dd9e3d019a98fcfd8",
+      "title": "Facebook App Manager - Android Debloat List v0.1.0",
+      "heading": "Facebook App Manager",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "PACKAGE REFERENCE\n\nFacebook App Manager\n\ncom.facebook.appmanager\n\nOther packages\nListed for removal\nA recorded classification, not a device-safety guarantee.\n\nCheck your exact package, ROM and recovery options before considering removal or replacement.\n\nRecorded notes\nHandles Facebook apps updates.\n\nSource: misc.json. Dataset snapshot: 2026-05-14.\n\nOpen in App Manager requires a compatible app on your device. This reference cannot remove packages.\n\nReference overview · How to read an entry",
+      "anchors": [
+        {
+          "text": "misc.json",
+          "href": "https://github.com/SysAdminDoc/android-debloat-list/blob/master/misc.json"
+        },
+        {
+          "text": "Open in App Manager",
+          "href": "app-manager://details?id=com.facebook.appmanager"
+        },
+        {
+          "text": "Reference overview",
+          "href": "../index.html"
+        },
+        {
+          "text": "How to read an entry",
+          "href": "../reading-guide.html"
+        }
+      ]
+    },
+    {
+      "name": "unsafe-dark",
+      "path": "bloatware/com.android.systemui.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "6f83f3c99dfdfed485af9ad3b839c299df344031e18a635026b7994e65829b6a",
+      "title": "com.android.systemui - Android Debloat List v0.1.0",
+      "heading": "com.android.systemui",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "PACKAGE REFERENCE\n\ncom.android.systemui\n\ncom.android.systemui\n\nAOSP\nUnsafe to remove\nKeep this package installed.\n\nGeneral guidance: this entry is marked unsafe. Removal can break device functions. This reference has not tested your phone or ROM.\n\nRecorded notes\nEverything you see in Android that's not an app. User interface of Android\n\nSource: aosp.json. Dataset snapshot: 2026-05-14.\n\nOpen in App Manager requires a compatible app on your device. This reference cannot remove packages.\n\nReference overview · How to read an entry",
+      "anchors": [
+        {
+          "text": "aosp.json",
+          "href": "https://github.com/SysAdminDoc/android-debloat-list/blob/master/aosp.json"
+        },
+        {
+          "text": "Open in App Manager",
+          "href": "app-manager://details?id=com.android.systemui"
+        },
+        {
+          "text": "Reference overview",
+          "href": "../index.html"
+        },
+        {
+          "text": "How to read an entry",
+          "href": "../reading-guide.html"
+        }
+      ]
+    },
+    {
+      "name": "overview-light",
+      "path": "index.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "light",
+      "sha256": "82d1a7be5050a1eb46f473177a7d43335f91f92613892a570dda1c9dc63d26ff",
+      "title": "Reference overview - Android Debloat List v0.1.0",
+      "heading": "Look up a package before you change it.",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "ANDROID DEBLOAT LIST V0.1.0 · SYSADMINDOC FORK\n\nLook up a package before you change it.\n\nRead the recorded purpose and removal classification for an Android package. Start with the exact package ID, then check the notes against your device.\n\n5,481\npackage records across five lists\n47\nreplacement categories, some still empty\n\nThis is an offline reference, not a debloating app. It can't inspect your phone or remove anything.\n\nFind an entry\n\nUse the search button at the top of the page. Try com.facebook.appmanager or com.android.systemui. Choose a result by its package ID, since several apps share the same label.\n\nBrowse AOSP, Carrier, Google, Other packages or Device makers in the sidebar.\n\nA classification isn't a safety guarantee.\n\nDevice builds differ. Missing notes or dependencies don't mean removal is safe. Read the warning and keep a recovery plan before changing a device.\n\nKnow which snapshot you're reading\n\nThe package data was last changed in this fork on 2026-05-14. v0.1.0 updates the reference presentation and packaging, not the underlying recommendations.\n\nThe SysAdminDoc fork includes records from Muntashir Al-Islam's Android Debloat List and UAD-NG. It isn't automatically synchronized with either project.\n\nHow to read an entry explains the classification values and missing information. License and origins covers attribution.",
+      "anchors": [
+        {
+          "text": "Look up a package before you change it.",
+          "href": "#look-up-a-package-before-you-change-it"
+        },
+        {
+          "text": "Find an entry",
+          "href": "#find-an-entry"
+        },
+        {
+          "text": "AOSP",
+          "href": "categories/aosp.html"
+        },
+        {
+          "text": "Carrier",
+          "href": "categories/carrier.html"
+        },
+        {
+          "text": "Google",
+          "href": "categories/google.html"
+        },
+        {
+          "text": "Other packages",
+          "href": "categories/misc.html"
+        },
+        {
+          "text": "Device makers",
+          "href": "categories/oem.html"
+        },
+        {
+          "text": "Know which snapshot you're reading",
+          "href": "#know-which-snapshot-youre-reading"
+        },
+        {
+          "text": "SysAdminDoc fork",
+          "href": "https://github.com/SysAdminDoc/android-debloat-list"
+        },
+        {
+          "text": "Muntashir Al-Islam's Android Debloat List",
+          "href": "https://github.com/MuntashirAkon/android-debloat-list"
+        },
+        {
+          "text": "How to read an entry",
+          "href": "reading-guide.html"
+        },
+        {
+          "text": "License and origins",
+          "href": "license.html"
+        }
+      ]
+    },
+    {
+      "name": "package-light",
+      "path": "bloatware/com.facebook.appmanager.html",
+      "width": 1440,
+      "height": 1040,
+      "theme": "light",
+      "sha256": "546b8c7e3ef89116e9a7beb4e977ad43dfc7a2521a07ddad8356d857a244269a",
+      "title": "Facebook App Manager - Android Debloat List v0.1.0",
+      "heading": "Facebook App Manager",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "PACKAGE REFERENCE\n\nFacebook App Manager\n\ncom.facebook.appmanager\n\nOther packages\nListed for removal\nA recorded classification, not a device-safety guarantee.\n\nCheck your exact package, ROM and recovery options before considering removal or replacement.\n\nRecorded notes\nHandles Facebook apps updates.\n\nSource: misc.json. Dataset snapshot: 2026-05-14.\n\nOpen in App Manager requires a compatible app on your device. This reference cannot remove packages.\n\nReference overview · How to read an entry",
+      "anchors": [
+        {
+          "text": "misc.json",
+          "href": "https://github.com/SysAdminDoc/android-debloat-list/blob/master/misc.json"
+        },
+        {
+          "text": "Open in App Manager",
+          "href": "app-manager://details?id=com.facebook.appmanager"
+        },
+        {
+          "text": "Reference overview",
+          "href": "../index.html"
+        },
+        {
+          "text": "How to read an entry",
+          "href": "../reading-guide.html"
+        }
+      ]
+    },
+    {
+      "name": "overview-mobile",
+      "path": "index.html",
+      "width": 390,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "f50701d6b2d5de990ee63e880b14c16dabb2fc9fcca6d4a014ba6332dcbbd1a2",
+      "title": "Reference overview - Android Debloat List v0.1.0",
+      "heading": "Look up a package before you change it.",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "ANDROID DEBLOAT LIST V0.1.0 · SYSADMINDOC FORK\n\nLook up a package before you change it.\n\nRead the recorded purpose and removal classification for an Android package. Start with the exact package ID, then check the notes against your device.\n\n5,481\npackage records across five lists\n47\nreplacement categories, some still empty\n\nThis is an offline reference, not a debloating app. It can't inspect your phone or remove anything.\n\nFind an entry\n\nUse the search button at the top of the page. Try com.facebook.appmanager or com.android.systemui. Choose a result by its package ID, since several apps share the same label.\n\nBrowse AOSP, Carrier, Google, Other packages or Device makers in the sidebar.\n\nA classification isn't a safety guarantee.\n\nDevice builds differ. Missing notes or dependencies don't mean removal is safe. Read the warning and keep a recovery plan before changing a device.\n\nKnow which snapshot you're reading\n\nThe package data was last changed in this fork on 2026-05-14. v0.1.0 updates the reference presentation and packaging, not the underlying recommendations.\n\nThe SysAdminDoc fork includes records from Muntashir Al-Islam's Android Debloat List and UAD-NG. It isn't automatically synchronized with either project.\n\nHow to read an entry explains the classification values and missing information. License and origins covers attribution.",
+      "anchors": [
+        {
+          "text": "Look up a package before you change it.",
+          "href": "#look-up-a-package-before-you-change-it"
+        },
+        {
+          "text": "Find an entry",
+          "href": "#find-an-entry"
+        },
+        {
+          "text": "AOSP",
+          "href": "categories/aosp.html"
+        },
+        {
+          "text": "Carrier",
+          "href": "categories/carrier.html"
+        },
+        {
+          "text": "Google",
+          "href": "categories/google.html"
+        },
+        {
+          "text": "Other packages",
+          "href": "categories/misc.html"
+        },
+        {
+          "text": "Device makers",
+          "href": "categories/oem.html"
+        },
+        {
+          "text": "Know which snapshot you're reading",
+          "href": "#know-which-snapshot-youre-reading"
+        },
+        {
+          "text": "SysAdminDoc fork",
+          "href": "https://github.com/SysAdminDoc/android-debloat-list"
+        },
+        {
+          "text": "Muntashir Al-Islam's Android Debloat List",
+          "href": "https://github.com/MuntashirAkon/android-debloat-list"
+        },
+        {
+          "text": "How to read an entry",
+          "href": "reading-guide.html"
+        },
+        {
+          "text": "License and origins",
+          "href": "license.html"
+        }
+      ]
+    },
+    {
+      "name": "package-mobile",
+      "path": "bloatware/com.android.systemui.html",
+      "width": 390,
+      "height": 1040,
+      "theme": "ayu",
+      "sha256": "48ea9d5832902f5c63638e9363f5512c4118505d234ad9604b7b051542bccca4",
+      "title": "com.android.systemui - Android Debloat List v0.1.0",
+      "heading": "com.android.systemui",
+      "overflow": false,
+      "brokenImages": 0,
+      "mainText": "PACKAGE REFERENCE\n\ncom.android.systemui\n\ncom.android.systemui\n\nAOSP\nUnsafe to remove\nKeep this package installed.\n\nGeneral guidance: this entry is marked unsafe. Removal can break device functions. This reference has not tested your phone or ROM.\n\nRecorded notes\nEverything you see in Android that's not an app. User interface of Android\n\nSource: aosp.json. Dataset snapshot: 2026-05-14.\n\nOpen in App Manager requires a compatible app on your device. This reference cannot remove packages.\n\nReference overview · How to read an entry",
+      "anchors": [
+        {
+          "text": "aosp.json",
+          "href": "https://github.com/SysAdminDoc/android-debloat-list/blob/master/aosp.json"
+        },
+        {
+          "text": "Open in App Manager",
+          "href": "app-manager://details?id=com.android.systemui"
+        },
+        {
+          "text": "Reference overview",
+          "href": "../index.html"
+        },
+        {
+          "text": "How to read an entry",
+          "href": "../reading-guide.html"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "networkRequests": []
+}

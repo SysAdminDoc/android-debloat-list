@@ -1,0 +1,24 @@
+Android Debloat List v0.1.0
+
+The dataset, reference generator and custom presentation retain AGPL-3.0-or-later.
+Copyright (C) 2022 Muntashir Al-Islam and contributors. See LICENSE and COPYING.
+
+The offline reference contains unmodified assets from mdBook 0.5.4.
+mdBook is distributed under the Mozilla Public License 2.0.
+Source: https://github.com/rust-lang/mdBook/tree/v0.5.4
+License: licenses/mdbook-MPL-2.0.txt in the offline download,
+or docs/licenses/mdbook-MPL-2.0.txt in the source repository.
+
+Bundled mdBook asset notices:
+
+clipboard.js 2.0.4, copyright Zeno Rocha, MIT.
+elasticlunr 0.9.5, copyright Oliver Nightingale and Wei Song, MIT.
+mark.js 8.11.1, copyright Julian Kühnel, MIT.
+Highlight.js 10.1.1, copyright Ivan Sagalaev, BSD-3-Clause.
+Font Awesome Free icons, copyright Fonticons, Inc., CC BY 4.0.
+Open Sans and Source Code Pro fonts, SIL Open Font License 1.1.
+
+The corresponding full license texts are retained in the licenses directory.
+Font licenses also remain beside their files in reference/fonts/.
+Original library license banners remain in the bundled scripts. None of these
+components endorse this fork or its package-removal classifications.
